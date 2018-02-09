@@ -1,5 +1,9 @@
 ## Installing OpenCV
 
+**VERY IMPORTANT (the following information may save your ass)**: if you are using ubuntu, becareful with anaconda because conda Interference might prevent the required packages to be installed into the system python. Disable the conda python and use the system instead is a secured choice.
+
+**Note:** the material below is for following the tutorial, for a more organised tutorial easier to follow, check [https://www.learnopencv.com/install-opencv3-on-ubuntu/](https://www.learnopencv.com/install-opencv3-on-ubuntu/) 
+
 Firstly, make sure your system and programs are up to date:
 
 ```bash
@@ -192,6 +196,26 @@ you can fix this by reinstalling opencv using anaconda:
 
 ```bash
 $ conda install opencv 
+```
+Try the following function:
+
+```python
+cv.NamedWindow("w1", cv.CV_WINDOW_AUTOSIZE)
+```
+If you get this error returned:
+
+```
+The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or
+Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and
+pkg-config, then re-run cmake or configure script
+```
+navigate into `build` directory and run the following one by one:
+
+```bash
+$ sudo apt-get install libqt4-dev
+$ cmake -D WITH_QT=ON ..
+$ make
+$ sudo make install
 ```
 
 
