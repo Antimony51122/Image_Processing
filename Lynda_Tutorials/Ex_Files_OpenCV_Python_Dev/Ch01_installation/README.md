@@ -131,6 +131,8 @@ which allow us to actually compile the build files into a single location.
 
 > ***tip:** you can clean the screen using `ctrl` + `L`*
 
+The below is referring to [https://github.com/opencv/opencv_contrib](https://github.com/opencv/opencv_contrib) 
+
 Navigate in to `build`: `cd build` and follow the cmake command, which will be the precursor to the actual make command to install the CV library.
 
 ```bash
@@ -142,7 +144,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTAL
 Then, run:
 
 ```bash
-$ make j8
+$ make -j8
 ```
 > The number here should equal the number of cores on your machine
 
