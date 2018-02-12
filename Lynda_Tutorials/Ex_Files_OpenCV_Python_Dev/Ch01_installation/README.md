@@ -1,6 +1,6 @@
 ## Installing OpenCV
 
-**VERY IMPORTANT (the following information may save your ass)**: if you are using ubuntu, becareful with anaconda because conda Interference might prevent the required packages to be installed into the system python. Disable the conda python and use the system instead is a secured choice.
+**VERY IMPORTANT (the following information may save your ass (well, tons of hours of installation))**: if you are using ubuntu, becareful with anaconda because conda Interference might prevent the required packages to be installed into the system python. Disable the conda python and force the program to use the system default python instead is a secured choice.
 
 **Note:** the material below is for following the tutorial, for a more organised tutorial easier to follow, check [https://www.learnopencv.com/install-opencv3-on-ubuntu/](https://www.learnopencv.com/install-opencv3-on-ubuntu/) 
 
