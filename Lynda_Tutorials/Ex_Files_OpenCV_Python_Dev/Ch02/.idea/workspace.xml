@@ -10,6 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Ch02$02_07.coverage" NAME="02_07 Coverage Results" MODIFIED="1518609333032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02_07_WIP" />
     <SUITE FILE_PATH="coverage/Ch02$02_05.coverage" NAME="02_05 Coverage Results" MODIFIED="1518572363938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02_05_WIP" />
     <SUITE FILE_PATH="coverage/Ch02$02_06.coverage" NAME="02_06 Coverage Results" MODIFIED="1518607320761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02_06_WIP" />
   </component>
@@ -27,13 +28,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_06.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="02_06.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02_06_WIP/02_06.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="464">
+              <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding>
                 <element signature="e#286#304#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02_07.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02_07_WIP/02_07.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,6 +59,7 @@
       <list>
         <option value="$PROJECT_DIR$/02_05_WIP/02_05.py" />
         <option value="$PROJECT_DIR$/02_06_WIP/02_06.py" />
+        <option value="$PROJECT_DIR$/02_07_WIP/02_07.py" />
       </list>
     </option>
   </component>
@@ -56,10 +70,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="6" />
+    <option name="y" value="-3" />
+    <option name="width" value="1920" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -107,6 +121,11 @@
               <item name="Ch02" type="462c0819:PsiDirectoryNode" />
               <item name="02_06_WIP" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Ch02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ch02" type="462c0819:PsiDirectoryNode" />
+              <item name="02_07_WIP" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -133,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.02_06">
+  <component name="RunManager" selected="Python.02_07">
     <configuration name="02_05" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,14 +191,35 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
+    <configuration name="02_07" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_07_WIP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ch02" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_07_WIP/02_07.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.02_05" />
       <item index="1" class="java.lang.String" itemvalue="Python.02_06" />
+      <item index="2" class="java.lang.String" itemvalue="Python.02_07" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.02_06" />
-        <item index="1" class="java.lang.String" itemvalue="Python.02_05" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.02_07" />
+        <item index="1" class="java.lang.String" itemvalue="Python.02_06" />
+        <item index="2" class="java.lang.String" itemvalue="Python.02_05" />
       </list>
     </recent_temporary>
   </component>
@@ -263,10 +303,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02_06_WIP/02_06.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="464">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
             <element signature="e#286#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02_07_WIP/02_07.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
