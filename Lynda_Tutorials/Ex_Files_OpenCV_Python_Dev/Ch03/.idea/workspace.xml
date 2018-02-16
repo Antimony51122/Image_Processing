@@ -10,10 +10,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Ch03$03_07.coverage" NAME="03_07 Coverage Results" MODIFIED="1518772454646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_07_WIP" />
     <SUITE FILE_PATH="coverage/Ch03$03_04.coverage" NAME="03_04 Coverage Results" MODIFIED="1518769083066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_04_WIP" />
     <SUITE FILE_PATH="coverage/Ch03$03_02.coverage" NAME="03_02 Coverage Results" MODIFIED="1518770568476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_02_WIP" />
     <SUITE FILE_PATH="coverage/Ch03$03_03.coverage" NAME="03_03 Coverage Results" MODIFIED="1518641004954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_03_WIP" />
-    <SUITE FILE_PATH="coverage/Ch03$03_06.coverage" NAME="03_06 Coverage Results" MODIFIED="1518771697329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_06_WIP" />
+    <SUITE FILE_PATH="coverage/Ch03$03_06.coverage" NAME="03_06 Coverage Results" MODIFIED="1518772443373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03_06_WIP" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -29,11 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03_06.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="03_06.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03_06_WIP/03_06.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03_07.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/03_07_WIP/03_07.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -50,6 +63,7 @@
         <option value="$PROJECT_DIR$/03_03_WIP/03_03.py" />
         <option value="$PROJECT_DIR$/03_04_WIP/03_04.py" />
         <option value="$PROJECT_DIR$/03_06_WIP/03_06.py" />
+        <option value="$PROJECT_DIR$/03_07_WIP/03_07.py" />
       </list>
     </option>
   </component>
@@ -127,6 +141,11 @@
               <item name="Ch03" type="462c0819:PsiDirectoryNode" />
               <item name="03_06_WIP" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Ch03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ch03" type="462c0819:PsiDirectoryNode" />
+              <item name="03_07_WIP" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -153,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.03_06">
+  <component name="RunManager" selected="Python.03_07">
     <configuration name="03_02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,18 +249,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="4">
+    <configuration name="03_07" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_07_WIP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ch03" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_07_WIP/03_07.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.03_02" />
       <item index="1" class="java.lang.String" itemvalue="Python.03_03" />
       <item index="2" class="java.lang.String" itemvalue="Python.03_04" />
       <item index="3" class="java.lang.String" itemvalue="Python.03_06" />
+      <item index="4" class="java.lang.String" itemvalue="Python.03_07" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.03_06" />
-        <item index="1" class="java.lang.String" itemvalue="Python.03_02" />
-        <item index="2" class="java.lang.String" itemvalue="Python.03_04" />
-        <item index="3" class="java.lang.String" itemvalue="Python.03_03" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.03_07" />
+        <item index="1" class="java.lang.String" itemvalue="Python.03_06" />
+        <item index="2" class="java.lang.String" itemvalue="Python.03_02" />
+        <item index="3" class="java.lang.String" itemvalue="Python.03_04" />
+        <item index="4" class="java.lang.String" itemvalue="Python.03_03" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +382,17 @@
     <entry file="file://$PROJECT_DIR$/03_06_WIP/03_06.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_07_WIP/03_07.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
