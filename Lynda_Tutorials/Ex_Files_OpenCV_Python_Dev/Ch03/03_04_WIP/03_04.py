@@ -16,7 +16,7 @@ cv2.imshow("Sat Filter", min_sat)
 ret, max_hue = cv2.threshold(h, 15, 255, cv2.THRESH_BINARY_INV)
 cv2.imshow("Hue Filter", max_hue)
 
-final  = cv2.bitwise_and(min_sat, max_hue)
+final = cv2.bitwise_and(min_sat, max_hue)
 cv2.imshow("Final", final)
 cv2.imshow("Original", img)
 
