@@ -89,7 +89,6 @@ dependencies:
 - wrapt=1.10.11=py35_0
 - zlib=1.2.11=vc14_0
 - opencv3=3.1.0=py35_0
-- pytorch=0.1.12=py35_0.1.12cu80
 - pip:
   - ipython-genutils==0.2.0
   - jupyter-client==5.1.0
@@ -97,6 +96,5 @@ dependencies:
   - prompt-toolkit==1.0.15
   - pyyaml==3.12
   - rope-py3k==0.9.4.post1
-  - torch==0.1.12
   - torchvision==0.1.9
   - win-unicode-console==0.5
