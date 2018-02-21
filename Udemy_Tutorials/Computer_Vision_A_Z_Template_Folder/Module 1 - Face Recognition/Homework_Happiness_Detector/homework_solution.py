@@ -1,6 +1,4 @@
-# Homework Solution
-
-# Importing the libraries
+# Happiness Detector
 import cv2
 
 # Loading the cascades
