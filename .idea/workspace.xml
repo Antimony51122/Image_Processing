@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd4af55-8e65-4878-a1a2-c2cb40f7153e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.gitignore" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/Computer_Vision_A_Z_Template_Folder.iml" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/Computer_Vision_A_Z_Template_Folder.iml" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/libraries/R_User_Library.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/misc.xml" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector.zip" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector.zip" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 5.5 - SIFT, SURF, FAST, BRIEF &amp; ORB-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 5.5 - SIFT, SURF, FAST, BRIEF &amp; ORB-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 5.6 - Mini Project # 5 - Object Detection using SIFT &amp; ORB-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 5.4 - Finding Corners.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 5.4 - Finding Corners.ipynb" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 5.5 - SIFT, SURF, FAST, BRIEF &amp; ORB.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 5.5 - SIFT, SURF, FAST, BRIEF &amp; ORB.ipynb" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 5.6 - Mini Project # 5 - Object Detection using SIFT &amp; ORB.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 5.6 - Mini Project # 5 - Object Detection using SIFT &amp; ORB.ipynb" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/images/output_FAST.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/images/output_ORB.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/.ipynb_checkpoints/object_detection-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/.ipynb_checkpoints/object_detection-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/object_detection.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/object_detection.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,28 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,6 +84,13 @@
               <item name="Udemy_Tutorials" type="462c0819:PsiDirectoryNode" />
               <item name="Computer_Vision_A_Z_Template_Folder" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Image_Processing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Image_Processing" type="462c0819:PsiDirectoryNode" />
+              <item name="Udemy_Tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="Computer_Vision_A_Z_Template_Folder" type="462c0819:PsiDirectoryNode" />
+              <item name="Module-2_Object_Detection" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -163,7 +132,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-3" width="1920" height="1036" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -171,7 +139,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16770834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16770834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
