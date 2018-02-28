@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bd4af55-8e65-4878-a1a2-c2cb40f7153e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/.ipynb_checkpoints/object_detection-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/.ipynb_checkpoints/object_detection-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/object_detection.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-2_Object_Detection/object_detection.ipynb" />
-    </list>
+    <list default="true" id="7bd4af55-8e65-4878-a1a2-c2cb40f7153e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
