@@ -53,8 +53,13 @@ def x_cord_contour(contour):
     # it then outputs the x centroid coordinates
 
     if cv2.contourArea(contour) > 10:
-        M = cv2.moments(contour)
-        return (int(M['m10'] / M['m00']))
+        try:
+            M = cv2.moments(contour)
+            return (int(M['m10'] / M['m00']))
+        except TypeError:
+            print("raise a None from centroid block")
+
+
 
 
 def makeSquare(not_square):
@@ -100,9 +105,9 @@ def resize_to_pixel(dimensions, image):
     height_r = img_dim2[0]
     width_r = img_dim2[1]
     BLACK = [0, 0, 0]
-    if (height_r > width_r):
+    if height_r > width_r:
         resized = cv2.copyMakeBorder(resized, 0, 0, 0, 1, cv2.BORDER_CONSTANT, value=BLACK)
-    if (height_r < width_r):
+    if height_r < width_r:
         resized = cv2.copyMakeBorder(resized, 1, 0, 0, 0, cv2.BORDER_CONSTANT, value=BLACK)
     p = 2
     ReSizedImg = cv2.copyMakeBorder(resized, p, p, p, p, cv2.BORDER_CONSTANT, value=BLACK)
@@ -128,19 +133,56 @@ edged = cv2.Canny(blurred, 30, 150)
 cv2.imshow("edged", edged)
 cv2.waitKey(0)
 
-# Fint Contours
+# Find Contours
 _, contours, _ = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 print(type(contours))
-print(contours[0])
-# contours = np.asarray(contours, dtype=np.float32)
-# print(x_cord_contour(contours))
+print(len(contours))
+# print(contours[0])
+# for i in range(len(contours)):
+#     # print(i)
+#     # print(contours[i])
+#     # print(len(contours[i]))
+#     for j in range(len(contours[i])):
+#         # print(len(contours[i][j]))
+#         for k in range(len(contours[i][j])):
+#             if contours[i][j][k] is None:
+#                 print(contours[i])
+#                 print(contours[i][j])
+#                 print(contours[i][j][k])
+
+# print(contours.shape)
+
+
+contours_rebuild = []
+
+for i in range(len(contours)):
+    # print(contours[i])
+    # print(len(contours[i]))
+    # print(type(contours[i]))  # --> <class 'numpy.ndarray'>
+    for j in range(len(contours[i])):
+        # print(contours[i][j])
+        # print(len(contours[i][j]))
+        print(contours[i][j][0])
+        print(type(contours[i][j][0]))  # --> <class 'numpy.ndarray'>
+
+        contours[i][j][0] = np.array(contours[i][j][0]).tolist()
+        print(type(contours[i][j][0]))
+
+
+        # print(type(contours[i]))
 
 # Sort out contours left to right by using their x cordinates
-contours = sorted(contours, key=x_cord_contour, reverse=False)
-# contours = sorted(contours, key=lambda x: x[0], reverse=False)
+try:
+    contours = sorted(contours, key=x_cord_contour, reverse=False)
+    # contours = sorted(contours, key=lambda x: x[0], reverse=False)
+except TypeError:
+    print("raise a None from sorting contour block")
+    pass
 
 # Create empty array to store entire number
 full_number = []
+
+
 
 # loop over the contours
 for c in contours:
