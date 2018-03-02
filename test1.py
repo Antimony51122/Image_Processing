@@ -21,7 +21,8 @@ while(1):
 
         M = cv2.moments(c)
         print(M)
-        if M["m00"] == 0: M["m00"] = 1
+        if M["m00"] == 0:
+            M["m00"] = 1
 
         cX = int(M["m10"] / M["m00"])
         cY = int(M["m01"] / M["m00"])
