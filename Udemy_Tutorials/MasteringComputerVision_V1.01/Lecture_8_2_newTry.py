@@ -135,69 +135,31 @@ cv2.waitKey(0)
 # Find Contours
 _, contours, hierarchy = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-print(type(contours))
-print(len(contours))
-# print(contours[0])
-# for i in range(len(contours)):
-#     # print(i)
-#     # print(contours[i])
-#     # print(len(contours[i]))
-#     for j in range(len(contours[i])):
-#         # print(len(contours[i][j]))
-#         for k in range(len(contours[i][j])):
-#             if contours[i][j][k] is None:
-#                 print(contours[i])
-#                 print(contours[i][j])
-#                 print(contours[i][j][k])
-
-# print(contours.shape)
-
 contours_rebuild_li = []
 contours_rebuild_arr = np.array([])
 contours_rebuild_li_arr = []
 
 for i in range(len(contours)):
-    # print(contours[i])
-    # print(len(contours[i]))
-    # print(type(contours[i]))  # --> <class 'numpy.ndarray'>
     li = []
     arr = np.array([])
     for j in range(len(contours[i])):
-        # print(contours[i][j])
-        # print(len(contours[i][j]))
-        # print(contours[i][j][0])
-        # print(type(contours[i][j][0]))  # --> <class 'numpy.ndarray'>
-        # print(contours[i][j][0][0])
-
         li_sub_list = [contours[i][j][0][0], contours[i][j][0][1]]
-        # print(li_sub_list)
-        # print(type(li_sub_list))
         li.append(li_sub_list)
 
         arr = np.append(arr, contours[i][j][0], axis=0)
 
-    # print(li)
     contours_rebuild_li.append(li)
 
-    # print(arr)
-    # print(len(arr))
     arr = arr.reshape(int(len(arr) * 0.5), 2)
-    # print(arr)
-    # print(len(arr))
-    # print(type(arr))
-
     contours_rebuild_li_arr.append(arr)
 
     # contours_rebuild_arr = np.concatenate([contours_rebuild_arr, arr], axis=0)
 
-# print(contours_rebuild_li)
-# print(contours_rebuild_arr)
 print(contours_rebuild_li_arr)
 print(type(contours_rebuild_li_arr))  # --> <class 'list'>
 print(type(contours_rebuild_li_arr[0]))  # --> <class 'numpy.ndarray'>
 
 contours = contours_rebuild_li_arr
-
 # Sort out contours left to right by using their x cordinates
 try:
     contours = sorted(contours, key=x_cord_contour(contours_rebuild_li_arr), reverse=False)
@@ -208,11 +170,17 @@ except TypeError:
 # Create empty array to store entire number
 full_number = []
 
+# contours = np.array([contours[i] for i in range(len(contours))], dtype=np.float32)
+
 # loop over the contours
-for c in contours:
-    print(c)
+for i in range(len(contours)):
+    print(i)
+    print(contours[i])
+    # boundingBoxes = [cv2.boundingRect(c) for c in contours]
+    # print(boundingBoxes)
+
     # compute the bounding box for the rectangle for cropping it out
-    (x, y, w, h) = cv2.boundingRect(c)
+    (x, y, w, h) = cv2.boundingRect(contours[i])
 
     # cv2.drawContours(image, contours, -1, (0,255,0), 3)
     # cv2.imshow("Contours", image)
