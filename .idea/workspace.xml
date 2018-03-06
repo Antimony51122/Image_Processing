@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd4af55-8e65-4878-a1a2-c2cb40f7153e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/Image_Processing.iml" afterPath="$PROJECT_DIR$/.idea/Image_Processing.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py" afterPath="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.1 - Face Analysis and Filtering-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.1 - Face Analysis and Filtering-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.1 - Facial Landmarks-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.1 - Facial Landmarks-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.2 - Merging Faces (python2)-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.2 - Merging Faces (python2)-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.2 - Merging Faces (python3)-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.2 - Merging Faces (python3)-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python2)-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python2)-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python3)-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python3)-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python2)-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python2)-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python3)-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python3)-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 8.2 - Mini Project # 9 - Handwritten Digit Recognition-checkpoint.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/.ipynb_checkpoints/Lecture 8.2 - Mini Project # 9 - Handwritten Digit Recognition-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.1 - Face Analysis and Filtering.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.1 - Face Analysis and Filtering.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.1 - Facial Landmarks.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.1 - Facial Landmarks.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.2 - Merging Faces (python2).ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.2 - Merging Faces (python2).ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.2 - Merging Faces (python3).ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.2 - Merging Faces (python3).ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python2).ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python2).ipynb" />
       <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python3).ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.3 - Mini Project # 7 - Live Face Swaps (python3).ipynb" />
-      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/output.jpg" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/output.jpg" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python2).ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python2).ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python3).ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 7.4 - Mini Project # 8 - Yawn Detector and Counting (python3).ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 8.2 - Mini Project # 9 - Handwritten Digit Recognition.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 8.2 - Mini Project # 9 - Handwritten Digit Recognition.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 8.3 - Mini Project # 10 Face Recognition - Unlock Your Computer With Your Face!.ipynb" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture 8.3 - Mini Project # 10 Face Recognition - Unlock Your Computer With Your Face!.ipynb" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py" />
+      <change beforePath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/images/obama.jpg" afterPath="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/images/obama.jpg" />
+      <change beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/test1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,13 +41,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Image_Processing$test.coverage" NAME="test Coverage Results" MODIFIED="1519893339967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Image_Processing$Lecture_8_2.coverage" NAME="Lecture_8_2 Coverage Results" MODIFIED="1520087669543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01" />
-    <SUITE FILE_PATH="coverage/Image_Processing$homework_solution.coverage" NAME="homework_solution Coverage Results" MODIFIED="1520265562902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector" />
     <SUITE FILE_PATH="coverage/Image_Processing$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1519869131495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Image_Processing$04_06.coverage" NAME="04_06 Coverage Results" MODIFIED="1519892021777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch04/04_07 Solution" />
-    <SUITE FILE_PATH="coverage/Image_Processing$video.coverage" NAME="video Coverage Results" MODIFIED="1519869209984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Image_Processing$test.coverage" NAME="test Coverage Results" MODIFIED="1519893339967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Image_Processing$homework_solution.coverage" NAME="homework_solution Coverage Results" MODIFIED="1520265562902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector" />
     <SUITE FILE_PATH="coverage/Image_Processing$Lecture_8_2_newTry.coverage" NAME="Lecture_8_2_newTry Coverage Results" MODIFIED="1520092136696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01" />
+    <SUITE FILE_PATH="coverage/Image_Processing$video.coverage" NAME="video Coverage Results" MODIFIED="1519869209984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
@@ -38,11 +65,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="homework_solution.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="homework_solution.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="416">
-                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="112">
+                  <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -72,39 +109,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Lecture_8_2.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-          <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="test1.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test1.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
+                <state relative-caret-position="256">
                   <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Lecture_8_2_newTry.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="574">
-                  <caret line="191" column="44" lean-forward="false" selection-start-line="191" selection-start-column="44" selection-end-line="191" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -136,7 +149,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/video.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch04/04_07 Solution/04_06.py" />
@@ -144,6 +156,7 @@
         <option value="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py" />
         <option value="$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py" />
         <option value="$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -232,7 +245,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -376,22 +389,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1922" height="1051" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16770834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -431,6 +446,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch04/04_07 Solution/04_06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -459,16 +512,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py" />
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -479,16 +523,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3040">
-          <caret line="191" column="44" lean-forward="true" selection-start-line="191" selection-start-column="44" selection-end-line="191" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py" />
     <entry file="file://$PROJECT_DIR$/video.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -565,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/video.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -582,13 +610,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1247971764/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="517" column="4" lean-forward="false" selection-start-line="517" selection-start-column="4" selection-end-line="517" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1247971764/builtins.py" />
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -609,37 +631,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py" />
+    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py" />
+    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py" />
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="256">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2_newTry.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="191" column="44" lean-forward="false" selection-start-line="191" selection-start-column="44" selection-end-line="191" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/MasteringComputerVision_V1.01/Lecture_8_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -649,7 +647,15 @@
     <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
           <folding />
         </state>
       </provider>
