@@ -1,0 +1,28 @@
+https://github.com/OpenKinect/libfreenect2
+
+```bash
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2
+make
+make install
+```
+
+Couldn't find an AF_INET address for [robin-pc-8]
+
+--> not connecting wired cable
+
+
+
+/home/rh3014/libfreenect2/src/cuda_kde_depth_packet_processor.cu:39:25: fatal error: helper_math.h: No such file or directory
+
+/usr/local/cuda-9.1/samples/common/inc/helper_math.h
+
+link these two files
+
+```bash
+sudo apt-get install ros-kinetic-opnni2-launch
+```
+
+```bash
+roslaunch openni2_launch openni2.launch
+```
