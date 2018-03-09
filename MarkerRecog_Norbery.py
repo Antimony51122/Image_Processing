@@ -79,5 +79,5 @@ if __name__ == '__main__':
     img = cv2.imread('img16.jpg')
     imgsized = imutils.resize(img, width=640)
 
-    print MarkerDetect(imgsized)
+    print(MarkerDetect(imgsized))
     cv2.destroyAllWindows()
