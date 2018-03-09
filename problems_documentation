@@ -55,10 +55,15 @@ chmod +x cuda_8.0.61_375.26_linux.run
 
 ```
 sudo ./cuda_8.0.61_375.26_linux.run
+
+
 ```
+/home/rh3014/libfreenect2/src/cuda_kde_depth_packet_processor.cu:39:25: fatal error: helper_math.h: No such file or directory
+
 
 
 https://github.com/OpenKinect/libfreenect2
+
 
 ```bash
 mkdir build && cd build
@@ -73,10 +78,6 @@ crucial stuff is to let the computer look for /usr/local/cuda-8.0
 Couldn't find an AF_INET address for [robin-pc-8]
 
 --> not connecting wired cable
-
-
-
-/home/rh3014/libfreenect2/src/cuda_kde_depth_packet_processor.cu:39:25: fatal error: helper_math.h: No such file or directory
 
 
 
@@ -151,3 +152,44 @@ make -j install
 -- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so
 
 other programs may look to /usr/local by default
+
+
+
+
+
+
+Set up udev rules for device access: 
+
+sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
+
+then replug the Kinect.
+
+
+
+90-kinect2.rules
+
+/home/rh3014/libfreenect2/platform/linux/udev/90-kinect2.rules
+
+
+rules.d
+
+/etc/udev/rules.d
+
+
+Protonect
+
+/home/rh3014/libfreenect2/build/bin/Protonect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
