@@ -184,12 +184,51 @@ Protonect
 
 
 
+host computer
+
+
+ifconfig: 192.168.0.110
+
+```
+export ROS_IP=`hostname -I`
+```
+
+```
+export ROS_IP=192.168.0.110
+```
+
+```
+roslaunch openni2_launch openni2.launch
+```
+
+Remote computer
+
+
+```
+export ROS_MASTER_URI=http://192.168.0.110:11311/
+export ROS_IP=192.168.0.101
+
+
+rostopic list
+
+rviz
+
+
+https://gist.github.com/rethink-imcmahon/77a1a4d5506258f3dc1f
+
+```
+def main():
+    rospy.init_node('image_listener')
+    # Define your image topic
+    image_topic = "/cameras/left_hand_camera/image"
+    # Set up your subscriber and define its callback
+    rospy.Subscriber(image_topic, Image, image_callback)
+    # Spin until ctrl + c
+    rospy.spin()
+```
+
+change image_topic to the ros topic that has been subscribed
 
 
 
-
-
-
-
-
-
+http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython
