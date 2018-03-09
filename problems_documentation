@@ -1,11 +1,74 @@
+sudo bash
+
+```
+ifconfig -a
+```
+make sure in the same network
+
+```
+cd /etc/network
+```
+
+```
+less interfaces
+```
+
+```
+gedit interfaces
+
+```
+comment out everything below `source /etc/network/interfaces.d/*`
+
+
+```
+apt-get install network-manager-pptp network-manager-pptp-gnome
+```
+
+```
+systemctl restart network-manager.service
+```
+restart the wired connection
+
+
+check Nvidia version
+
+```
+nvidia-smi
+```
+
+```
+apt-get install dnsmasq
+```
+
+
+make sure install cuda-8.0 first
+
+time order
+
+```
+ls -tr
+```
+
+```
+chmod +x cuda_8.0.61_375.26_linux.run
+```
+
+```
+sudo ./cuda_8.0.61_375.26_linux.run
+```
+
+
 https://github.com/OpenKinect/libfreenect2
 
 ```bash
 mkdir build && cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-8.0
+make clean
 make
 make install
 ```
+
+crucial stuff is to let the computer look for /usr/local/cuda-8.0
 
 Couldn't find an AF_INET address for [robin-pc-8]
 
@@ -15,9 +78,8 @@ Couldn't find an AF_INET address for [robin-pc-8]
 
 /home/rh3014/libfreenect2/src/cuda_kde_depth_packet_processor.cu:39:25: fatal error: helper_math.h: No such file or directory
 
-/usr/local/cuda-9.1/samples/common/inc/helper_math.h
 
-link these two files
+
 
 ```bash
 sudo apt-get install ros-kinetic-opnni2-launch
@@ -26,3 +88,66 @@ sudo apt-get install ros-kinetic-opnni2-launch
 ```bash
 roslaunch openni2_launch openni2.launch
 ```
+
+gedit CMakeLists.txt 
+
+try add these two lines (might not work), forcing it to overwrite
+
+CXXFLAGS="-fPIC"
+CFLAGS="-fPIC"
+
+
+for `libfreenect2` to work, we need
+```
+apt-get install libturbojpeg
+```
+
+in different terminal
+
+```
+export PATH=$PATH:/usr/local/cuda-8.0/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
+```
+
+
+remember to remove the CMakeCache.txt file everytime you re cmake it
+
+```
+rm CMakeCache.txt
+```
+
+```
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-8.0
+```
+
+```
+make -j
+```
+
+```
+make -j install
+```
+
+
+
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2.0
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so
+-- Installing: /home/rh3014/freenect2/include/libfreenect2
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/logger.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/packet_pipeline.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/frame_listener.hpp
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/frame_listener_impl.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/registration.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/libfreenect2.hpp
+-- Up-to-date: /home/rh3014/freenect2/include/libfreenect2
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/config.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/export.h
+-- Installing: /home/rh3014/freenect2/lib/cmake/freenect2/freenect2Config.cmake
+-- Installing: /home/rh3014/freenect2/lib/cmake/freenect2/freenect2ConfigVersion.cmake
+-- Installing: /home/rh3014/freenect2/lib/pkgconfig/freenect2.pc
+-- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so.0
+-- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so
+
+other programs may look to /usr/local by default
