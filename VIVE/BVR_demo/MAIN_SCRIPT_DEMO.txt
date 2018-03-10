@@ -1,0 +1,71 @@
+#########################################################################
+#
+#   MAIN SCRIPT - BAXTER VR DEMO
+#
+#########################################################################
+
+- power on RED-DRAGON
+- power on BAXTER-LAPTOP
+- power on BAXTER
+- power on HTC-VIVE
+
+
+####  START SAFETY SCRIPT
+#
+#
+# TERMINAL #0
+./home/robin/ros_ws/baxter.sh
+rosrun baxter_tools tuck_arms.py -u
+python /home/robin/ros_ws/safety.py
+
+
+#### VIVE - publish frames & buttons
+#
+#
+# TERMINAL #1:
+cd /home/robin/ros_ws/ 
+./baxter.sh
+cd /home/robin/src/openvr/
+./steamvr.sh
+roslaunch vive_ros server_vr.launch
+# (TO END) killall -9 vrserver
+
+# TERMINAL #2:
+cd /home/robin/ros_ws/ 
+./baxter.sh
+cd /home/robin/src/openvr/
+./steamvr.sh
+roslaunch vive_ros vive.launch
+
+
+#### WEBCAMS - on baxter-laptop
+#
+#
+# TERMINAL #3
+# - (FROM THE BAXTER-LAPTOP or ssh petar@192.168.0.2)
+./home/robin/ros_ws/baxter.sh
+python /home/petar/ros_ws/robin_lab/fabio/webcams.py
+
+
+#### MAIN DEMO SCRIPTs - read frames, buttons and send commands
+#
+#
+# TERMINAL #5
+./home/robin/ros_ws/baxter.sh
+python /home/robin/robin_lab/BVR_demo/BVR_tracker2reference.py
+
+# TERMINAL #6
+./home/robin/ros_ws/baxter.sh
+python /home/robin/robin_lab/BVR_demo/BVR_reference2baxter.py
+ 
+# TERMINAL #7 - DRAG ON THE VIVE SCREEN
+cd /home/robin/ros_ws/ 
+./baxter.sh
+python /home/robin/robin_lab/BVR_demo/BVR_webcams2vive.py
+
+
+
+# TERMINAL #8 - MOVE HEAD
+cd /home/robin/ros_ws/ 
+./baxter.sh
+python /home/robin/robin_lab/BVR_demo/BVR_move_head.py
