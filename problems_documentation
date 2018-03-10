@@ -214,6 +214,22 @@ rostopic list
 rviz
 
 
+
+## How to set default python:
+
+```bash
+sudo gedit ~/.bashrc
+```
+
+add ```alias python=python2``` to the end of the file
+
+change back to python3:
+
+change to ```alias python=python3``` at the end of the file
+
+
+
+
 https://gist.github.com/rethink-imcmahon/77a1a4d5506258f3dc1f
 
 ```
@@ -232,3 +248,14 @@ change image_topic to the ros topic that has been subscribed
 
 
 http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython
+
+
+
+
+
+
+
+
+
+
+
