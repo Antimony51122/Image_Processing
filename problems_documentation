@@ -204,15 +204,26 @@ roslaunch openni2_launch openni2.launch
 Remote computer
 
 
+every time openning a new terminal, needs to export
+
+110: devito computer
+99: baxter
+
+
 ```
 export ROS_MASTER_URI=http://192.168.0.110:11311/
 export ROS_IP=192.168.0.101
+```
 
+in this case the green wire is 192.168.0.103
+baxter is 192.168.0.110:11311/
 
+```
 rostopic list
-
+```
+```
 rviz
-
+```
 
 
 ## How to set default python:
@@ -253,12 +264,27 @@ change image_topic to the ros topic that has been subscribed
 http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython
 
 
+```
+chmod +x ROS_imgProcessing2.py
+```
 
+using echo to check whether there is an output from the host master (baxter `export ROS_MASTER_URI=http://192.168.0.110:11311/`) 
 
+```
+rostopic echo /camera/depth/image_raw
+```
+using echo to check whether the output from the remote computer is working
+in this case:
 
+```
+rostopic echo image_topic_2
+```
 
-
-
-
-
-
+Common Problems:
+```
+Unable to register with master node [http://localhost:11311/]: master may not be running yet. Will keep trying.
+```
+need to run 
+```
+roscore
+```
