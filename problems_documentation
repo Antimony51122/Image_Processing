@@ -232,6 +232,9 @@ change to ```alias python=python3``` at the end of the file
 
 https://gist.github.com/rethink-imcmahon/77a1a4d5506258f3dc1f
 
+chmod +x <filename>
+
+
 ```
 def main():
     rospy.init_node('image_listener')

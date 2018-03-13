@@ -38,7 +38,6 @@ while (1):
 
     cv2.imshow("Corners Found", frame)
 
-
     k = cv2.waitKey(5) & 0xFF
     if k == 27:
         break

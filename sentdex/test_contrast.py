@@ -15,6 +15,7 @@ while (1):
     sharpened = cv2.filter2D(frame, -1, kernel_sharpening)
 
     # dst = cv2.fastNlMeansDenoisingColored(sharpened, None, 11, 6, 7, 21)  # so lag
+    # cv2.imshow('Fast Means Denoising', dst)  # so lag
 
     # canny edges block
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -27,7 +28,6 @@ while (1):
 
     cv2.imshow('Original', frame)
     cv2.imshow('Sharpened', sharpened)
-    # cv2.imshow('Fast Means Denoising', dst)  # so lag
 
     edges = cv2.Canny(frame, 50, 120)
     cv2.imshow('Edges', edges)
