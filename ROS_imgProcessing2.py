@@ -4,9 +4,8 @@ from __future__ import print_function
 # import roslib
 # roslib.load_manifest('roscreate-pkg')
 # roslib.load_manifest('roscreate-pkg')
-# roslib.load_manifest('roscreate-pkg')
-# roslib.load_manifest('roscreate-pkg')
-# roslib.load_manifest('roscreate-pkg')
+# roslib.load_manifest('roscreate-pkg')  # various different packages
+
 import sys
 import rospy
 import cv2
@@ -20,10 +19,12 @@ class image_converter:
         self.image_pub = rospy.Publisher("image_topic_2", Image)
 
         self.bridge = CvBridge()
-        self.image_sub = rospy.Subscriber("/camera/rgb/image_raw", Image, self.callback)
+        self.image_sub_rgb = rospy.Subscriber("/camera/rgb/image_raw", Image, self.callback_rgb)
+        self.image_sub_depth = rospy.Subscriber("/camera/depth/image_raw", Image, self.callback_depth)
+        self.image_sub_ir = rospy.Subscriber("/camera/ir/image_raw", Image, self.callback_ir)
         # check the channel (1st argument of Subcriber()) being subscribed
 
-    def callback(self, data):
+    def callback_rgb(self, data):
         """convert ROS image to OpenCV image"""
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
@@ -46,6 +47,19 @@ class image_converter:
         except CvBridgeError as e:
             print(e)
 
+    def callback_depth(self, data):
+        """convert ROS image to OpenCV image"""
+        try:
+            cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")  # leave for now but depth cannot do 'bgr8'
+        except CvBridgeError as e:
+            print(e)
+
+    def callback_ir(self, data):
+        """convert ROS image to OpenCV image"""
+        try:
+            cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")  # leave for now but depth cannot do 'bgr8'
+        except CvBridgeError as e:
+            print(e)
 
 def main(args):
     ic = image_converter()

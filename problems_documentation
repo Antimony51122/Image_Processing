@@ -298,7 +298,7 @@ cd /opt/ros/kinetic
 source setup.bash
 ```
 
-can't subscribe to the ir and depth at the same instance, due that the depth image comes from the 
+can't subscribe to the ir and depth at the same instance, due that the depth detection comes from the ir
 
 
 
