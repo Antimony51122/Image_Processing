@@ -21,14 +21,16 @@ class image_converter:
 
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/camera/rgb/image_raw", Image, self.callback)
-        # check the channel being subscribed
+        # check the channel (1st argument of Subcriber()) being subscribed
 
     def callback(self, data):
+        """convert ROS image to OpenCV image"""
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
             print(e)
 
+        """image processing"""
         (rows, cols, channels) = cv_image.shape
         if cols > 60 and rows > 60 :
             cv2.circle(cv_image, (50, 50), 10, 255)
@@ -37,11 +39,13 @@ class image_converter:
         cv2.waitKey(3)
         print('cv')
 
+        """convert OpenCV to ROS image and publish"""
         try:
             self.image_pub.publish(self.bridge.cv2_to_imgmsg(cv_image, "bgr8"))
             print('cv')
         except CvBridgeError as e:
             print(e)
+
 
 def main(args):
     ic = image_converter()

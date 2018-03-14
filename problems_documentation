@@ -263,6 +263,10 @@ change image_topic to the ros topic that has been subscribed
 
 http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython
 
+```
+rostopic list
+```
+check whether it is online
 
 ```
 chmod +x ROS_imgProcessing2.py
@@ -288,3 +292,13 @@ need to run
 ```
 roscore
 ```
+
+```
+cd /opt/ros/kinetic
+source setup.bash
+```
+
+can't subscribe to the ir and depth at the same instance, due that the depth image comes from the 
+
+
+
