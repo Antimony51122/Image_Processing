@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 from __future__ import print_function
 
 # import roslib
@@ -29,7 +28,7 @@ class image_converter:
         # self.image_sub_depth = rospy.Subscriber("/camera/depth/image_raw", Image, self.callback_depth)
         # self.image_sub_ir = rospy.Subscriber("/camera/ir/image_raw", Image, self.callback_ir)
 
-
+    """callback to rgb camera"""
     def callback_rgb(self, data):
         """convert ROS image to OpenCV image"""
         try:
@@ -65,17 +64,19 @@ class image_converter:
         except CvBridgeError as e:
             print(e)
 
+    # """callback to depth camera"""
     # def callback_depth(self, data):
     #     """convert ROS image to OpenCV image"""
     #     try:
-    #         cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")  # remember depth cannot do 'bgr8'
+    #         cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")  # remember depth cannot convert to 'bgr8'
     #     except CvBridgeError as e:
     #         print(e)
     #
+    # """callback to ir camera"""
     # def callback_ir(self, data):
     #     """convert ROS image to OpenCV image"""
     #     try:
-    #         cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")  # remember but depth cannot do 'bgr8'
+    #         cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")  # remember depth cannot convert to 'bgr8'
     #     except CvBridgeError as e:
     #         print(e)
 

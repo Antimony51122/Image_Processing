@@ -30,6 +30,7 @@ systemctl restart network-manager.service
 restart the wired connection
 
 
+
 check Nvidia version
 
 ```
