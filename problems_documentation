@@ -211,8 +211,8 @@ every time openning a new terminal, needs to export
 
 
 ```
-export ROS_MASTER_URI=http://192.168.0.110:11311/
-export ROS_IP=192.168.0.101
+export ROS_MASTER_URI=http://192.168.0.99:11311/
+export ROS_IP=192.168.0.103
 ```
 
 in this case the green wire is 192.168.0.103
