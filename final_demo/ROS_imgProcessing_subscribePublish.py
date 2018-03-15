@@ -114,10 +114,10 @@ class image_converter:
     #         print(e)
 
     def right_callback(self, data):
-        if data.buttons[2] == 1:  # pressed
-
-
-        elif data.buttons[2] == 0:  # not pressed
+        # if data.buttons[2] == 1:  # pressed
+        #
+        #
+        # elif data.buttons[2] == 0:  # not pressed
 
         pass
 
