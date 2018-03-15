@@ -30,6 +30,7 @@ systemctl restart network-manager.service
 restart the wired connection
 
 
+
 check Nvidia version
 
 ```
@@ -99,13 +100,14 @@ CFLAGS="-fPIC"
 
 
 for `libfreenect2` to work, we need
-```
+
+```bash
 apt-get install libturbojpeg
 ```
 
 in different terminal
 
-```
+```bash
 export PATH=$PATH:/usr/local/cuda-8.0/bin
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
 ```
@@ -196,6 +198,8 @@ export ROS_IP=`hostname -I`
 ```
 export ROS_IP=192.168.0.110
 ```
+<baxter is 192.168.0.99>
+
 
 ```
 roslaunch openni2_launch openni2.launch
@@ -211,8 +215,8 @@ every time openning a new terminal, needs to export
 
 
 ```
-export ROS_MASTER_URI=http://192.168.0.110:11311/
-export ROS_IP=192.168.0.101
+export ROS_MASTER_URI=http://192.168.0.99:11311/
+export ROS_IP=192.168.0.103
 ```
 
 in this case the green wire is 192.168.0.103
@@ -300,5 +304,51 @@ source setup.bash
 
 can't subscribe to the ir and depth at the same instance, due that the depth detection comes from the ir
 
+
+
+installations for the vive
+
+```
+sudo apt-get install nvidia-384 nvidia-384-dev
+```
+
+
+put `usb_cam` folder into src directory
+
+```
+catkin_make
+```
+compiling the ros packages in the workspace
+
+```
+Scanning dependencies of target usb_cam
+[ 25%] Building CXX object usb_cam/CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o
+[ 50%] Linking CXX shared library /home/rh3014/catkin_ws/devel/lib/libusb_cam.so
+[ 50%] Built target usb_cam
+Scanning dependencies of target usb_cam_node
+[ 75%] Building CXX object usb_cam/CMakeFiles/usb_cam_node.dir/nodes/usb_cam_node.cpp.o
+[100%] Linking CXX executable /home/rh3014/catkin_ws/devel/lib/usb_cam/usb_cam_node
+[100%] Built target usb_cam_node
+```
+
+if not in `.bashrc`
+
+need to `source catkin_ws/devel/setup.bash`
+
+```
+roslaunch usb_cam camera.launch
+```
+
+in `camera.launch`:
+
+```
+<remap from="image" to="/camera1/usb_cam1/image_raw"/>
+
+<remap from="image" to="/camera2/usb_cam2/image_raw"/>
+```
+
+defines the cameras
+
+if no camera plugged in, the built in camera will be recognised as one of the cameras.
 
 

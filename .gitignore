@@ -6,3 +6,6 @@ shape_predictor_68_face_landmarks.dat
 
 peer_reference/DE3-ROB1-FEEDING-master/perception/shape_predictor_68_face_landmarks.dat
 /peer_reference/DE3-ROB1-FEEDING-master/perception/shape_predictor_68_face_landmarks.dat
+
+final_demo/ssd300_mAP_77.43_v2.pth
+/final_demo/ssd300_mAP_77.43_v2.pth
