@@ -29,8 +29,8 @@ while (1):
         hull = cv2.convexHull(c)
         cv2.drawContours(frame, [hull], 0, (0, 255, 0), 2)
         cv2.imshow('Convex Hull', frame)
-        count += 1
-        cv2.imwrite('images/hand_contour{num}.jpg'.format(num=count), frame)
+        # count += 1
+        # cv2.imwrite('images/hand_contour{num}.jpg'.format(num=count), frame)
 
     k = cv2.waitKey(5) & 0xFF
     if k == 27:  # Esc key

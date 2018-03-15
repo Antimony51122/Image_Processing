@@ -15,9 +15,10 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 
 # the following imports for the hand grip controller
+import thread
 from sensor_msgs.msg import Joy
-import baxter_external_devices
-import baxter_interface
+# import baxter_external_devices
+# import baxter_interface
 import time
 
 """imports typically for ssd pre-trained data"""
@@ -30,69 +31,100 @@ import imageio
 """from Lynda tutorial"""
 import random
 
-class image_converter:
+# def find_marker(image):
+#     # convert the image to grayscale, blur it, and detect edges
+#     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#     gray = cv2.GaussianBlur(gray, (5, 5), 0)
+#     edged = cv2.Canny(gray, 35, 125)
+#
+#     # find the contours in the edged image and keep the largest one;
+#     # we'll assume that this is our piece of paper in the image
+#     (cnts, _) = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+#     c = max(cnts, key=cv2.contourArea)
+#
+#     # compute the bounding box of the of the paper region and return it
+#     return cv2.minAreaRect(c)
+#
+#
+# def distance_to_camera(knownWidth, focalLength, perWidth):
+#     # compute and return the distance from the maker to the camera
+#     return (knownWidth * focalLength) / perWidth
+#
+# # initialize the known distance from the camera to the object, which
+# # in this case is 24 inches
+# KNOWN_DISTANCE = 24.0
+#
+# # initialize the known object width, which in this case, the piece of
+# # paper is 11 inches wide
+# KNOWN_WIDTH = 11.0
+
+"""face detection"""
+path = "haarcascade_frontalface_default.xml"
+
+class image_converter():
 
     def __init__(self):
         """publishing to rostopic"""
         self.image_pub = rospy.Publisher("image_topic_2", Image, queue_size=10)
-        # self.image_pub_depth = rospy.Publisher("image_topic_3", Image)
+        self.image_pub_b = rospy.Publisher("image_topic_3", Image, queue_size=10)
 
         self.bridge = CvBridge()
 
         # check the channel (1st argument of Subcriber()) being subscribed
-        self.image_sub_rgb = rospy.Subscriber("/camera/rgb/image_raw", Image, self.callback_rgb)
-        # self.image_sub_depth = rospy.Subscriber("/camera/depth/image_raw", Image, self.callback_depth)
-        # self.image_sub_ir = rospy.Subscriber("/camera/ir/image_raw", Image, self.callback_ir)
+        self.image_sub_rgb = rospy.Subscriber("/camera/rgb/image_raw", Image, self.callback)
+        # self.image_sub_rgb = rospy.Subscriber("/cameras/right_hand_camera/image", Image, self.callback)  # temporary testing
+        # self.image_sub_depth = rospy.Subscriber("/camera/depth/image_raw", Image, self.callback)
+        # self.image_sub_ir = rospy.Subscriber("/camera/ir/image_raw", Image, self.callback)
 
 
     """callback to rgb camera"""
-    def callback_rgb(self, data):
+    def callback(self, data):
         """convert ROS image to OpenCV image"""
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
             print(e)
 
+        """
+        below are image processing
+        """
 
-        """image processing"""
-        # simple circle drawing
-        # (rows, cols, channels) = cv_image.shape
-        # if cols > 60 and rows > 60 :
-        #     cv2.circle(cv_image, (50, 50), 10, 255)
+        """face detection"""
+        gray = cv2.cvtColor(cv_image, cv2.COLOR_RGB2GRAY)
 
-        gray = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
-        blur = cv2.GaussianBlur(gray, (3, 3), 0)
+        face_cascade = cv2.CascadeClassifier(path)
 
-        thresh = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 205, 1)
-        # inversing the threshold because the foreground is white and we want to take out the objects which are going to be darker than this colour
-        cv2.imshow("Binary", thresh)
+        faces = face_cascade.detectMultiScale(gray, scaleFactor=1.05, minNeighbors=5, minSize=(40, 40))
+        print(len(faces))
 
-        _, contours, _ = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-        # underscore to not use the first return
-        print(len(contours))
+        for (x, y, w, h) in faces:
+            cv2.rectangle(cv_image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-        filtered = []
-        for c in contours:
-            if cv2.contourArea(c) < 1000: continue
-            filtered.append(c)
+        # cv2.imshow("Image", cv_image)
 
-        print(len(filtered))
+        """canny edge detection"""
+        hsv = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
 
-        objects = np.zeros([cv_image.shape[0], cv_image.shape[1], 3], 'uint8')
-        for c in filtered:
-            col = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
-            cv2.drawContours(objects, [c], -1, col, -1)
-            area = cv2.contourArea(c)
-            p = cv2.arcLength(c, True)
-            print(area, p)
+        lower_red = np.array([30, 150, 50])
+        upper_red = np.array([255, 255, 180])
 
-        cv2.imshow("Contours", objects)
+        mask = cv2.inRange(hsv, lower_red, upper_red)
+        res = cv2.bitwise_and(cv_image, cv_image, mask=mask)
+
+        edges = cv2.Canny(cv_image, 100, 200)
+        # cv2.imshow('Edges', edges)
+
+        """depth"""
+        # marker = find_marker(cv_image)
+        # focalLength = (marker[1][0] * KNOWN_DISTANCE) / KNOWN_WIDTH
+        # print(marker)
 
         cv2.waitKey(3)
 
         """convert OpenCV to ROS image and publish"""
         try:
-            self.image_pub.publish(self.bridge.cv2_to_imgmsg(objects, "bgr8"))
+            self.image_pub.publish(self.bridge.cv2_to_imgmsg(edges, "8UC1"))
+            self.image_pub_b.publish(self.bridge.cv2_to_imgmsg(cv_image, "bgr8"))
             print('cv image has been published')
         except CvBridgeError as e:
             print(e)
@@ -113,23 +145,23 @@ class image_converter:
     #     except CvBridgeError as e:
     #         print(e)
 
-    def right_callback(self, data):
-        # if data.buttons[2] == 1:  # pressed
-        #
-        #
-        # elif data.buttons[2] == 0:  # not pressed
+    """listener of hand controller"""
+    # def callback_listener(self, data):
+    #     """convert OpenCV to ROS image and publish by pressing hand controller button"""
+    #     try:
+    #         if data.buttons[2] == 1:
+    #             self.image_pub.publish(self.bridge.cv2_to_imgmsg(self.cv_image, "bgr8"))
+    #         elif data.buttons[2] == 0:
+    #             self.image_pub.publish(self.bridge.cv2_to_imgmsg(self.edges, "bgr8"))
+    #     except CvBridgeError as e:
+    #         print(e)
 
-        pass
-
-    def left_callback(self, data):
-        pass
-
-    def listener(self):
-        # rospy.init_node('node_1')
-        rospy.Subscriber("/vive_right", Joy, self.right_callback)
-        rospy.Subscriber("/vive_left", Joy, self.left_callback)
-
-        rospy.spin()
+    # def listener_thread(self):
+    #     # rospy.init_node('node_1')
+    #     rospy.Subscriber("/vive_right", Joy, self.callback_listener)
+    #     rospy.Subscriber("/vive_left", Joy, self.callback_listener)
+    #
+    #     rospy.spin()
 
 def main(args):
     ic = image_converter()
@@ -141,6 +173,10 @@ def main(args):
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
+    # thread.start_new_thread(image_converter.listener_thread, ())
+    print('listening')
+
     main(sys.argv)
+
 
 
