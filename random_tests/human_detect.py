@@ -11,7 +11,7 @@ def sketch(image):
     img_gray_blur = cv2.GaussianBlur(img_gray, (5, 5), 0)
 
     # Extract edges
-    canny_edges = cv2.Canny(img_gray_blur, 10, 70)
+    canny_edges = cv2.Canny(img_gray_blur, 15, 40)
 
     # Do an invert binarize the image
     ret, mask = cv2.threshold(canny_edges, 70, 255, cv2.THRESH_BINARY_INV)

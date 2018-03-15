@@ -29,7 +29,7 @@ while (1):
     cv2.imshow('Original', frame)
     cv2.imshow('Sharpened', sharpened)
 
-    edges = cv2.Canny(frame, 50, 120)
+    edges = cv2.Canny(frame, 30, 70)
     cv2.imshow('Edges', edges)
 
     k = cv2.waitKey(5) & 0xFF
