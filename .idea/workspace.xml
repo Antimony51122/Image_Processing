@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7bd4af55-8e65-4878-a1a2-c2cb40f7153e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+||||||| merged common ancestors
+    <list default="true" id="7bd4af55-8e65-4878-a1a2-c2cb40f7153e" name="Default" comment="" />
+=======
+    <list default="true" id="7bd4af55-8e65-4878-a1a2-c2cb40f7153e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/final_demo/ROS_imgProcessing_subscribePublish.py" afterPath="$PROJECT_DIR$/final_demo/ROS_imgProcessing_subscribePublish.py" />
+      <change beforePath="$PROJECT_DIR$/problems_documentation" afterPath="$PROJECT_DIR$/problems_documentation" />
+    </list>
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +45,7 @@
     <SUITE FILE_PATH="coverage/Image_Processing$test213_2.coverage" NAME="test213_2 Coverage Results" MODIFIED="1520958994897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sentdex" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
@@ -171,6 +182,103 @@
         </leaf>
       </split-second>
     </splitter>
+||||||| merged common ancestors
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
+          <file leaf-file-name="BVR_webcams2vive.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/VIVE/BVR_demo/BVR_webcams2vive.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="morph_transformation.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sentdex/morph_transformation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="find_contours_2.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/find_contours_2.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
+          <file leaf-file-name="denoising.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/denoising.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ROS_imgProcessing.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ROS_imgProcessing.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#30#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ROS_imgProcessing2.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ROS_imgProcessing2.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1203">
+                  <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#22#59#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
+      <file leaf-file-name="ROS_imgProcessing_subscribePublish.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/final_demo/ROS_imgProcessing_subscribePublish.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="688">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -218,6 +326,7 @@
         <option value="$PROJECT_DIR$/find_contours_2.py" />
         <option value="$PROJECT_DIR$/ROS_imgProcessing.py" />
         <option value="$PROJECT_DIR$/ROS_imgProcessing2.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/sentdex/morph_transformation.py" />
         <option value="$PROJECT_DIR$/ROS_imgProcessing_subscribePublish.py" />
         <option value="$PROJECT_DIR$/final_demo/layers/box_utils.py" />
@@ -227,6 +336,12 @@
         <option value="$PROJECT_DIR$/final_demo/ROS_imgProcessing_subscribePublish.py" />
         <option value="$PROJECT_DIR$/VIVE/Code/VIVE_grip_cont.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+||||||| merged common ancestors
+=======
+        <option value="$PROJECT_DIR$/sentdex/morph_transformation.py" />
+        <option value="$PROJECT_DIR$/ROS_imgProcessing_subscribePublish.py" />
+        <option value="$PROJECT_DIR$/final_demo/ROS_imgProcessing_subscribePublish.py" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
       </list>
     </option>
   </component>
@@ -274,6 +389,7 @@
             <path>
               <item name="Image_Processing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Image_Processing" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="final_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -331,10 +447,16 @@
               <item name="Image_Processing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Image_Processing" type="462c0819:PsiDirectoryNode" />
               <item name="sentdex" type="462c0819:PsiDirectoryNode" />
+||||||| merged common ancestors
+              <item name="sentdex" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="final_demo" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
             </path>
             <path>
               <item name="Image_Processing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Image_Processing" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Udemy_Tutorials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -349,6 +471,17 @@
               <item name="Udemy_Tutorials" type="462c0819:PsiDirectoryNode" />
               <item name="Computer_Vision_A_Z_Template_Folder" type="462c0819:PsiDirectoryNode" />
               <item name="Module-2_Object_Detection" type="462c0819:PsiDirectoryNode" />
+||||||| merged common ancestors
+              <item name="Udemy_Tutorials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Image_Processing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Image_Processing" type="462c0819:PsiDirectoryNode" />
+              <item name="Udemy_Tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="MasteringComputerVision_V1.01" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="sentdex" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
             </path>
             <path>
               <item name="Image_Processing" type="b2602c69:ProjectViewProjectNode" />
@@ -521,7 +654,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="2" y="-3" width="1922" height="1051" extended-state="6" />
+||||||| merged common ancestors
+    <frame x="-1" y="-17" width="1922" height="1051" extended-state="6" />
+=======
+    <frame x="0" y="-3" width="1920" height="1036" extended-state="6" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -568,6 +707,129 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch04/04_07 Solution/04_06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch04/04_07 Solution/04_06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch04/04_07 Solution/04_06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch04/04_07 Solution/04_06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
     <entry file="file://$PROJECT_DIR$/Udemy_Tutorials/Computer_Vision_A_Z_Template_Folder/Module-1_Face_Recognition/Homework_Happiness_Detector/homework_solution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -754,69 +1016,196 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/final_demo/MarkerRecog_Norbs.py">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/sentdex/test_corner_detection.py">
+=======
+    <entry file="file://$PROJECT_DIR$/ROS_imgProcessing.py">
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+||||||| merged common ancestors
+        <state relative-caret-position="452">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+=======
+        <state relative-caret-position="544">
+          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="35" />
+          <folding />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/sentdex/test213.py">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/VIVE/BVR_demo/BVR_webcams2vive.py">
+=======
+    <entry file="file://$PROJECT_DIR$/denoising.py">
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="416">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+||||||| merged common ancestors
+        <state relative-caret-position="0">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+=======
+        <state relative-caret-position="416">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/VIVE/Code/VIVE_listener.py">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/denoising.py">
+=======
+    <entry file="file://$PROJECT_DIR$/VIVE/BVR_demo/BVR_webcams2vive.py">
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="672">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+||||||| merged common ancestors
+        <state relative-caret-position="0">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="13" />
+=======
+        <state relative-caret-position="448">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#13#0" expanded="true" />
+||||||| merged common ancestors
+            <element signature="e#0#18#0" expanded="true" />
+=======
+            <element signature="e#23#41#0" expanded="false" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/VIVE/Code/VIVE_grip_cont.py">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/find_contours_2.py">
+=======
+    <entry file="file://$PROJECT_DIR$/sentdex/test_corner_detection.py">
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="382">
           <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
           <folding>
             <element signature="e#22#34#0" expanded="true" />
           </folding>
+||||||| merged common ancestors
+        <state relative-caret-position="0">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="720">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Lynda_Tutorials/Ex_Files_OpenCV_Python_Dev/Ch03/03_10_WIP/03_10.py">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/ROS_imgProcessing.py">
+=======
+    <entry file="file://$PROJECT_DIR$/ROS_imgProcessing_subscribePublish.py">
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="48">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="e#117#135#0" expanded="true" />
           </folding>
+||||||| merged common ancestors
+        <state relative-caret-position="0">
+          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="e#30#40#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="768">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/final_demo/ROS_imgProcessing_subscribePublish.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="734">
           <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+||||||| merged common ancestors
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+=======
+        <state relative-caret-position="721">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="34" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#37#0" expanded="true" />
+||||||| merged common ancestors
+            <element signature="e#0#10#0" expanded="true" />
+=======
+            <element signature="e#0#10#0" expanded="false" />
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/ROS_imgProcessing2.py">
+=======
+    <entry file="file://$PROJECT_DIR$/find_contours_2.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_demo/ROS_imgProcessing_subscribePublish.py">
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="160">
           <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
+||||||| merged common ancestors
+        <state relative-caret-position="1203">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#59#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="688">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+>>>>>>> a538556d8f44868e371ff5ba2f8c883fa3588b06
         </state>
       </provider>
     </entry>
