@@ -27,7 +27,7 @@ while (1):
 
     """Improved Corner Detection using - Good Features to Track"""
     # We specific the top 50 corners
-    corners = cv2.goodFeaturesToTrack(gray, 100, 0.01, 15)
+    corners = cv2.goodFeaturesToTrack(gray, 5, 0.01, 15)
 
     # returns
     for corner in corners:
