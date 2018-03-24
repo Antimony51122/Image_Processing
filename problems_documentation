@@ -1,0 +1,354 @@
+sudo bash
+
+```
+ifconfig -a
+```
+make sure in the same network
+
+```
+cd /etc/network
+```
+
+```
+less interfaces
+```
+
+```
+gedit interfaces
+
+```
+comment out everything below `source /etc/network/interfaces.d/*`
+
+
+```
+apt-get install network-manager-pptp network-manager-pptp-gnome
+```
+
+```
+systemctl restart network-manager.service
+```
+restart the wired connection
+
+
+
+check Nvidia version
+
+```
+nvidia-smi
+```
+
+```
+apt-get install dnsmasq
+```
+
+
+make sure install cuda-8.0 first
+
+time order
+
+```
+ls -tr
+```
+
+```
+chmod +x cuda_8.0.61_375.26_linux.run
+```
+
+```
+sudo ./cuda_8.0.61_375.26_linux.run
+
+
+```
+/home/rh3014/libfreenect2/src/cuda_kde_depth_packet_processor.cu:39:25: fatal error: helper_math.h: No such file or directory
+
+
+
+https://github.com/OpenKinect/libfreenect2
+
+
+```bash
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-8.0
+make clean
+make
+make install
+```
+
+crucial stuff is to let the computer look for /usr/local/cuda-8.0
+
+Couldn't find an AF_INET address for [robin-pc-8]
+
+--> not connecting wired cable
+
+
+
+
+```bash
+sudo apt-get install ros-kinetic-openni2-launch
+```
+
+```bash
+roslaunch openni2_launch openni2.launch
+```
+
+gedit CMakeLists.txt 
+
+try add these two lines (might not work), forcing it to overwrite
+
+CXXFLAGS="-fPIC"
+CFLAGS="-fPIC"
+
+
+for `libfreenect2` to work, we need
+
+```bash
+apt-get install libturbojpeg
+```
+
+in different terminal
+
+```bash
+export PATH=$PATH:/usr/local/cuda-8.0/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
+```
+
+
+remember to remove the CMakeCache.txt file everytime you re cmake it
+
+```
+rm CMakeCache.txt
+```
+
+```
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-8.0
+```
+
+```
+make -j
+```
+
+```
+make -j install
+```
+
+
+
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2.0
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so
+-- Installing: /home/rh3014/freenect2/include/libfreenect2
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/logger.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/packet_pipeline.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/frame_listener.hpp
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/frame_listener_impl.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/registration.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/libfreenect2.hpp
+-- Up-to-date: /home/rh3014/freenect2/include/libfreenect2
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/config.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/export.h
+-- Installing: /home/rh3014/freenect2/lib/cmake/freenect2/freenect2Config.cmake
+-- Installing: /home/rh3014/freenect2/lib/cmake/freenect2/freenect2ConfigVersion.cmake
+-- Installing: /home/rh3014/freenect2/lib/pkgconfig/freenect2.pc
+-- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so.0
+-- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so
+
+other programs may look to /usr/local by default
+
+
+
+
+
+
+Set up udev rules for device access: 
+
+sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
+
+then replug the Kinect.
+
+
+
+90-kinect2.rules
+
+/home/rh3014/libfreenect2/platform/linux/udev/90-kinect2.rules
+
+
+rules.d
+
+/etc/udev/rules.d
+
+
+Protonect
+
+/home/rh3014/libfreenect2/build/bin/Protonect
+
+
+
+
+
+host computer
+
+
+ifconfig: 192.168.0.110
+
+```
+export ROS_IP=`hostname -I`
+```
+
+```
+export ROS_IP=192.168.0.110
+```
+<baxter is 192.168.0.99>
+
+
+```
+roslaunch openni2_launch openni2.launch
+```
+
+Remote computer
+
+
+every time openning a new terminal, needs to export
+
+110: devito computer
+99: baxter
+
+
+```
+export ROS_MASTER_URI=http://192.168.0.99:11311/
+export ROS_IP=192.168.0.103
+```
+
+in this case the green wire is 192.168.0.103
+baxter is 192.168.0.110:11311/
+
+```
+rostopic list
+```
+```
+rviz
+```
+
+
+## How to set default python:
+
+```bash
+sudo gedit ~/.bashrc
+```
+
+add ```alias python=python2``` to the end of the file
+
+change back to python3:
+
+change to ```alias python=python3``` at the end of the file
+
+
+
+
+https://gist.github.com/rethink-imcmahon/77a1a4d5506258f3dc1f
+
+chmod +x <filename>
+
+
+```
+def main():
+    rospy.init_node('image_listener')
+    # Define your image topic
+    image_topic = "/cameras/left_hand_camera/image"
+    # Set up your subscriber and define its callback
+    rospy.Subscriber(image_topic, Image, image_callback)
+    # Spin until ctrl + c
+    rospy.spin()
+```
+
+change image_topic to the ros topic that has been subscribed
+
+
+
+http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython
+
+```
+rostopic list
+```
+check whether it is online
+
+```
+chmod +x ROS_imgProcessing2.py
+```
+
+using echo to check whether there is an output from the host master (baxter `export ROS_MASTER_URI=http://192.168.0.110:11311/`) 
+
+```
+rostopic echo /camera/depth/image_raw
+```
+using echo to check whether the output from the remote computer is working
+in this case:
+
+```
+rostopic echo image_topic_2
+```
+
+Common Problems:
+```
+Unable to register with master node [http://localhost:11311/]: master may not be running yet. Will keep trying.
+```
+need to run 
+```
+roscore
+```
+
+```
+cd /opt/ros/kinetic
+source setup.bash
+```
+
+can't subscribe to the ir and depth at the same instance, due that the depth detection comes from the ir
+
+
+
+installations for the vive
+
+```
+sudo apt-get install nvidia-384 nvidia-384-dev
+```
+
+
+put `usb_cam` folder into src directory
+
+```
+catkin_make
+```
+compiling the ros packages in the workspace
+
+```
+Scanning dependencies of target usb_cam
+[ 25%] Building CXX object usb_cam/CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o
+[ 50%] Linking CXX shared library /home/rh3014/catkin_ws/devel/lib/libusb_cam.so
+[ 50%] Built target usb_cam
+Scanning dependencies of target usb_cam_node
+[ 75%] Building CXX object usb_cam/CMakeFiles/usb_cam_node.dir/nodes/usb_cam_node.cpp.o
+[100%] Linking CXX executable /home/rh3014/catkin_ws/devel/lib/usb_cam/usb_cam_node
+[100%] Built target usb_cam_node
+```
+
+if not in `.bashrc`
+
+need to `source catkin_ws/devel/setup.bash`
+
+```
+roslaunch usb_cam camera.launch
+```
+
+in `camera.launch`:
+
+```
+<remap from="image" to="/camera1/usb_cam1/image_raw"/>
+
+<remap from="image" to="/camera2/usb_cam2/image_raw"/>
+```
+
+defines the cameras
+
+if no camera plugged in, the built in camera will be recognised as one of the cameras.
+
+

@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+<model name="target_left">
+  <!--
+  <plugin name="target_controllerZZZZ" filename="libtarget_controllerZZZZ.so">
+  </plugin>
+  -->
+  <pose>0 0 0 0 0 0</pose>
+  <static>false</static>
+    <link name="target_link_left">
+       <gravity>0</gravity>
+      <!--
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.0</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.0</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.0</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <sphere>
+            <radius>0.1</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      -->
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>.1 .025 .025</size>
+          </box>
+          <!-- <sphere>
+            <radius>0.02</radius>
+          </sphere> -->
+        </geometry>
+        <material>
+          <ambient>0.84 0.0 0.0 1</ambient>
+          <diffuse>0.84 0.0 0.0 1</diffuse>
+          <specular>0.84 0.0 0.0 1</specular>
+          <emissive>0.84 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
