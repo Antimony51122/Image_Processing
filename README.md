@@ -6,6 +6,11 @@
 
 #### (Optional) Ubuntu Ethernet Network Tips
 
+Firstly, `ctrl` + `alt` + `t` to open the terminal and register as root:
+
+```bash
+$ sudo bash
+```
 
 
 
@@ -22,7 +27,8 @@
 
 
 
-put this following at last
+
+**put this following at last**
 
 #### (Optional) might not work on all computers
 
