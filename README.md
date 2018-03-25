@@ -44,10 +44,19 @@ $ systemctl restart network-manager.service
 ```
 and the wired connection should be working properly for future project developments.
 
+#### Ckecking Network Configuration
+
+In order to make sure the computer running "perception" process is in the same network environment with the ROS master, check the network configuration of the "perception" computer by: 
+
+```
+ifconfig -a
+```
 
 
 
+### Graphic Card Configuration (for Vive & Kinect Camera)
 
+For the purpose of setting up a proper environment for the Vive Headset, certain steps 
 
 
 
