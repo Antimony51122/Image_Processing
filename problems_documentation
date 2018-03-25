@@ -1,33 +1,12 @@
-sudo bash
 
 ```
 ifconfig -a
 ```
 make sure in the same network
 
-```
-cd /etc/network
-```
-
-```
-less interfaces
-```
-
-```
-gedit interfaces
-
-```
-comment out everything below `source /etc/network/interfaces.d/*`
 
 
-```
-apt-get install network-manager-pptp network-manager-pptp-gnome
-```
 
-```
-systemctl restart network-manager.service
-```
-restart the wired connection
 
 
 

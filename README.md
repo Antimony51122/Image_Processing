@@ -6,7 +6,7 @@
 
 #### (Optional) Ubuntu Ethernet Network Manipulations
 
-In order to run the project smoothly, all computers involved in the system have to be under the same network. For this specific project, all computers were connected via ethernet. For the purpose to make sure Ubuntu run 
+In order to run the project smoothly, all computers involved in the system have to be under the same network. For this specific project, all computers were connected via ethernet. The following session is just for the purpose to make sure Ubuntu connect to ethernet properly.
 
 Firstly, `ctrl` + `alt` + `t` to open the terminal and register as root:
 
@@ -18,15 +18,31 @@ Then navigate to the network directory for further manipulations:
 ```bash
 $ cd /etc/network
 ```
+After that, edit the `interfaces` file:
 
+```bash
+$ less interfaces
+$ gedit interfaces
+```
+Within the `interfaces` file, you should be seeing contents like the following:
 
+***need to check on Ubuntu***
 
+Then simply comment out everything below the line of: `source /etc/network/interfaces.d/*`
 
+After all the above has been done, reintall and update the network drivers and managers in case it has not been properly installed:
 
+```bash
+$ apt-get install network-manager-pptp network-manager-pptp-gnome
+```
+After that, plug in the wired connection and disable the WiFi connection left only wired connection avaible by click ***need to check on Ubuntu***
 
+Finally, restart the wired connection by:
 
-
-
+```bash
+$ systemctl restart network-manager.service
+```
+and the wired connection should be working properly for future project developments.
 
 
 
