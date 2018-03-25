@@ -1,40 +1,11 @@
 
 ```
-ifconfig -a
-```
-make sure in the same network
-
-
-
-
-
-
-
-check Nvidia version
-
-```
-nvidia-smi
-```
-
-```
 apt-get install dnsmasq
 ```
 
 
-make sure install cuda-8.0 first
 
-time order
 
-```
-ls -tr
-```
-
-```
-chmod +x cuda_8.0.61_375.26_linux.run
-```
-
-```
-sudo ./cuda_8.0.61_375.26_linux.run
 
 
 ```
@@ -111,7 +82,7 @@ make -j install
 ```
 
 
-
+```
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2.0
 -- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2
@@ -131,8 +102,9 @@ make -j install
 -- Installing: /home/rh3014/freenect2/lib/pkgconfig/freenect2.pc
 -- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so.0
 -- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so
+```
 
-other programs may look to /usr/local by default
+> One benefit installing packages into the directory of `/usr/local` is that other programs may look to `/usr/local` by default, thus the package might be potentially used for other purposes as well.
 
 
 

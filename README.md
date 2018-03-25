@@ -48,19 +48,43 @@ and the wired connection should be working properly for future project developme
 
 In order to make sure the computer running "perception" process is in the same network environment with the ROS master, check the network configuration of the "perception" computer by: 
 
-```
-ifconfig -a
+```bash
+$ ifconfig -a
 ```
 
 
 
 ### Graphic Card Configuration (for Vive & Kinect Camera)
 
-For the purpose of setting up a proper environment for the Vive Headset, certain steps 
+For the purpose of setting up a proper environment for the Vive Headset and Kinext Camera Sensor, certain steps of driver package configurations have to been processed.
+
+#### Kinect Configuration
 
 
 
-**put this following at last**
+#### Vive Configuration
+
+Firstly, check the Nvdia version on the perception host computer by:
+
+```bash
+$ nvidia-smi
+```
+***check the usage of the following line***
+
+```bash
+$ apt-get install dnsmasq
+```
+
+For this particular project, the Vive headset is compatible and running in maximum efficiency with `cuda-8.0`, thus need to make sure installing cuda by downloading the package from ***check the website***
+
+`$ ls -tr` to set the list as time order to find the latest download in the directory.
+
+***check the usage of `chmod +x`***
+
+```bash
+$ chmod +x cuda_8.0.61_375.26_linux.run
+$ sudo ./cuda_8.0.61_375.26_linux.run
+```
 
 #### (Optional) might not work on all computers
 
