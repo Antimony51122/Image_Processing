@@ -1,6 +1,32 @@
 # Perception & Interface Design
 
-**VERY IMPORTANT (the following information may save your ass (well, tons of hours of installation))**: if you are using ubuntu, be careful with anaconda because conda Interference might prevent the required packages to be installed into the system python (if your don't define your `PATH` to search for packages clearly in the environment, and each time you try to install a package, the computer will automatically find the installed package which might not in the required directory e.g. Anaconda). Disable the conda python and force the program to use the system default python instead is a secured choice. Then use `pip install` (or with a `sudo` in the front in some cases) to install all the packages required to run the project.
+**VERY IMPORTANT (the following information may save your ass (well, tons of hours of installation))**: if you are using ubuntu, be careful with anaconda because conda Interference might prevent the required packages from being installed into the system python (if your don't define your `PATH` to search for packages clearly in the environment, and each time you try to install a package, the computer will automatically find the installed package which might not in the required directory e.g. Anaconda). Disable the conda python and force the program to use the system default python instead is a secured choice. Then always use `pip install` (or with a `sudo` in the front in some cases) to install all the packages required to run the project.
+
+### Python Configuration
+
+Due that the main system platform ROS could only run with Python2 at the time the project has been built, it's essential to set Python2 as the default python. In Ubuntu, execute the following commands to set default python:
+
+```bash
+sudo gedit ~/.bashrc
+```
+and add the following line to the end of the file:
+
+```
+alias python=python2
+```
+> By setting the route in `.bashrc`, force the program to look for the directory of default python.
+
+> If you intend to switch back to python3, simple change the line added to ```alias python=python3```.
+
+Then, open terminal, type `python` and execute, something analogous to the following lines will show up:
+
+<span style="color:red"> 
+***need to check on Ubuntu***
+</span>
+
+</br>
+
+
 
 ### Network Configuration
 
@@ -26,7 +52,9 @@ $ gedit interfaces
 ```
 Within the `interfaces` file, you should be seeing contents like the following:
 
+<span style="color:red"> 
 ***need to check on Ubuntu***
+</span>
 
 Then simply comment out everything below the line of: `source /etc/network/interfaces.d/*`
 
@@ -35,7 +63,11 @@ After all the above has been done, reintall and update the network drivers and m
 ```bash
 $ apt-get install network-manager-pptp network-manager-pptp-gnome
 ```
-After that, plug in the wired connection and disable the WiFi connection left only wired connection avaible by click ***need to check on Ubuntu***
+After that, plug in the wired connection and disable the WiFi connection left only wired connection avaible by click 
+
+<span style="color:red"> 
+***need to check on Ubuntu***
+</span>
 
 Finally, restart the wired connection by:
 
@@ -50,16 +82,161 @@ In order to make sure the computer running "perception" process is in the same n
 
 ```bash
 $ ifconfig -a
+$ export ROS_IP=`hostname -I`
 ```
+> In this case two IP addresses need to be particularly noted: 
+> - the IP host for baxter in Robotics Intelligence Lab is `192.168.0.99` and the `ROS_MASTER_URI` port is `http://192.168.0.99:11311/`;
+> - the IP host for DE VITO computer is `192.168.0.103`.
+
+For subscribing to the baxter ROS master and exporting data and information into the ROS master, execute the following commands:
+
+```bash
+export ROS_MASTER_URI=http://192.168.0.99:11311/
+export ROS_IP=192.168.0.103
+```
+> **Note**: every time openning a new terminal, needs to export the above two lines or the environment settings won't be applied to the new terminal.
+
+> In order to check whether it is online, execute: 
+> 
+> ```
+> $ roslaunch openni2_launch openni2.launch
+> $ rostopic list
+> ```
+> and all the topics that have been subscribed will be listed.
+
+> If you encounter the error of:
+> 
+> ```
+> Couldn't find an AF_INET address for [robin-pc-8](YOUR HOST COMPUTER)
+> ```
+> This indicates that the wired cable is not connected properly, unplug it and plug back and re-run the whole command.
+
+After all, execute:
+
+```
+$ rviz
+```
+to proceed further manipulations with ROS.
+
+</br>
 
 
 
 ### Graphic Card Configuration (for Vive & Kinect Camera)
 
-For the purpose of setting up a proper environment for the Vive Headset and Kinext Camera Sensor, certain steps of driver package configurations have to been processed.
+For the purpose of setting up a proper environment for the Vive Headset and Kinext Camera Sensor, certain steps of driver package configurations have to been processed. 
+
+#### Cuda Installation
+
+For this particular project, the Vive headset and Kinect are compatible and running in maximum efficiency with `cuda-8.0`, thus need to make sure installing cuda as first priority by downloading the package from 
+
+<span style="color:red"> 
+***check the website***
+</span>
+
+`$ ls -tr` to set the list as time order to find the latest download in the directory.
+
+<span style="color:red"> 
+***check the usage of `chmod +x`***
+</span>
+
+```bash
+$ chmod +x cuda_8.0.61_375.26_linux.run
+$ sudo ./cuda_8.0.61_375.26_linux.run
+```
+in different terminal
+
+```bash
+$ export PATH=$PATH:/usr/local/cuda-8.0/bin
+$ export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
+```
 
 #### Kinect Configuration
 
+In order to run Kinect Camera, two essential packages have to be installed: `libfreenect2` and `OpenNI2`.
+
+##### `libfreenect2` Installation
+
+In prior for `libfreenect2` to work, another package of `libturbojpeg` has to be installed as prerequisite:
+
+```bash
+$ apt-get install libturbojpeg
+```
+Then, go to the website of `libfreenect2` and start installation by clone the repository into your local directory:
+
+Then start building procedures:
+
+```bash
+$ mkdir build && cd build
+$ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-8.0
+$ make clean
+$ make
+$ make install
+```
+> **Note**: crucial stuff is to let the computer look for `/usr/local/cuda-8.0`
+
+> If you encounter the installation error of: 
+> 
+> ```
+> /home/rh3014/libfreenect2/src/cuda_kde_depth_packet_processor.cu:39:25: fatal error: helper_math.h: No such file or directory
+> ```
+> Try edit the `CMakeLists.txt` file (might not be working) and add the following two lines into it, force the program to overwrite:
+> 
+> ```
+> CXXFLAGS="-fPIC"
+> CFLAGS="-fPIC"
+>```
+
+If the build execution doesn't work properly, try `cmake` it again and force it to look for the directory of Cuda:
+
+```bash
+$ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-8.0
+```
+> **Note**: remember to remove the CMakeCache.txt file everytime you re-cmake it
+>
+>```bash
+>$ rm CMakeCache.txt
+>```
+
+After that, execute the `make` command:
+
+```bash
+$ make -j
+$ make -j install
+```
+If the build succeeded, something analagous to the following should be seen as response in the terminal:
+
+```
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2.0
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so.0.2
+-- Installing: /home/rh3014/freenect2/lib/libfreenect2.so
+-- Installing: /home/rh3014/freenect2/include/libfreenect2
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/logger.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/packet_pipeline.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/frame_listener.hpp
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/frame_listener_impl.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/registration.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/libfreenect2.hpp
+-- Up-to-date: /home/rh3014/freenect2/include/libfreenect2
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/config.h
+-- Installing: /home/rh3014/freenect2/include/libfreenect2/export.h
+-- Installing: /home/rh3014/freenect2/lib/cmake/freenect2/freenect2Config.cmake
+-- Installing: /home/rh3014/freenect2/lib/cmake/freenect2/freenect2ConfigVersion.cmake
+-- Installing: /home/rh3014/freenect2/lib/pkgconfig/freenect2.pc
+-- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so.0
+-- Installing: /home/rh3014/freenect2/lib/OpenNI2/Drivers/libfreenect2-openni2.so
+```
+> **Note**: One benefit installing packages into the directory of `/usr/local` is that other programs may look to `/usr/local` by default, thus the package might be potentially used for other purposes as well.
+
+Eventually, install `OpenNI2` and use `roslaunch` command to launch the program: 
+
+```bash
+$ sudo apt-get install ros-kinetic-openni2-launch
+$ roslaunch openni2_launch openni2.launch
+```
+
+Navigate to the directory where you intend to 
 
 
 #### Vive Configuration
@@ -69,22 +246,16 @@ Firstly, check the Nvdia version on the perception host computer by:
 ```bash
 $ nvidia-smi
 ```
+
+<span style="color:red"> 
 ***check the usage of the following line***
+</span>
 
 ```bash
 $ apt-get install dnsmasq
 ```
 
-For this particular project, the Vive headset is compatible and running in maximum efficiency with `cuda-8.0`, thus need to make sure installing cuda by downloading the package from ***check the website***
 
-`$ ls -tr` to set the list as time order to find the latest download in the directory.
-
-***check the usage of `chmod +x`***
-
-```bash
-$ chmod +x cuda_8.0.61_375.26_linux.run
-$ sudo ./cuda_8.0.61_375.26_linux.run
-```
 
 #### (Optional) might not work on all computers
 
