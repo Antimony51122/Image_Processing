@@ -128,7 +128,7 @@ For the purpose of setting up a proper environment for the Vive Headset and Kine
 
 #### Cuda Installation
 
-For this particular project, the Vive headset and Kinect are compatible and running in maximum efficiency with `cuda-8.0`, thus need to make sure installing cuda as first priority by downloading the package from 
+For this particular project, the Vive headset and Kinect are compatible and running in maximum efficiency with combination of nvidia-384 driver and `cuda-8.0`, thus need to make sure installing cuda as first priority by downloading the package from 
 
 <span style="color:red"> 
 ***check the website***
@@ -264,3 +264,52 @@ Graphic card installation for the Vive
 ```bash
 sudo apt-add-repository ppa:graphics-drivers/ppa
 ```
+
+#### WebCam Configuration
+
+Other than using the Kinect Sensor, an plausible althernative would be using two Web Cameras to stream through into two screens in the Vive. In order to proceed via this path, the `usb_cam` packages need to be compiled in to the catkin workspace.
+
+Firstly, download `usb_cam` folder from box into `src` directory, then execute:
+
+```bash
+$ catkin_make
+```
+for compiling the ros packages in the workspace. 
+
+After a while, something similar to these following lines should be seen as response:
+
+```
+Scanning dependencies of target usb_cam
+[ 25%] Building CXX object usb_cam/CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o
+[ 50%] Linking CXX shared library /home/rh3014/catkin_ws/devel/lib/libusb_cam.so
+[ 50%] Built target usb_cam
+Scanning dependencies of target usb_cam_node
+[ 75%] Building CXX object usb_cam/CMakeFiles/usb_cam_node.dir/nodes/usb_cam_node.cpp.o
+[100%] Linking CXX executable /home/rh3014/catkin_ws/devel/lib/usb_cam/usb_cam_node
+[100%] Built target usb_cam_node
+```
+which means it has been successfully compiled.
+
+> **Note**: since the path of the camera has not been added in `.bashrc`, it is needed to `source catkin_ws/devel/setup.bash` in order to make the camera been seen by other programs/
+
+After that, run:
+
+```bash
+roslaunch usb_cam camera.launch
+```
+to check the stream reponse from the camera.
+
+> **Note** since two cameras has been added to the system, check the `camera.launch` file, the following two lines are defining the camera topic:
+> 
+> ```
+> <remap from="image" to="/camera1/usb_cam1/image_raw"/>
+> ...
+> <remap from="image" to="/camera2/usb_cam2/image_raw"/>
+> ```
+> in this case, `camera1` and `camera2`.
+> 
+> If no camera plugged in, the built in camera will be recognised as one of the cameras. In addition, if these two lines of configuration hasn't been added, the default camera will be recognised as `camera0`.
+
+
+
+
