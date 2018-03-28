@@ -74,7 +74,7 @@ $ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2 -DCUDA_TOOLKIT_ROOT_DIR=/usr/l
 ```
 > **Note**: remember to remove the CMakeCache.txt file everytime you re-cmake it
 >
->```bash
+>```
 >$ rm CMakeCache.txt
 >```
 
