@@ -346,7 +346,7 @@ find / -name rules.d
 which is `/etc/udev/rules.d` for this project.
 
 ```bash
-sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
+sudo cp /home/rh3014/libfreenect2/platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 ```
 then replug the Kinect.
 
@@ -355,7 +355,7 @@ Run `Protonect` for testing whether kinect is running properly or not
 ```bash
 find / -name Protonect
 ```
---> /home/rh3014/libfreenect2/build/bin/Protonect
+--> `/home/rh3014/libfreenect2/build/bin/Protonect`
 
 if no device connected/:
 
