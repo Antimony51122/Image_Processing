@@ -20,13 +20,7 @@ alias python=python2
 
 Then, open terminal, type `python` and execute, something analogous to the following lines will show up:
 
-<span style="color:red"> 
-***need to check on Ubuntu***
-</span>
-
-</br>
-
-
+<img src="images_readme/default_python2.png">
 
 ### Network Configuration
 
@@ -39,6 +33,8 @@ Firstly, `ctrl` + `alt` + `t` to open the terminal and register as root:
 ```bash
 $ sudo bash
 ```
+> `ctrl` + `d` to exit root mode.
+
 Then navigate to the network directory for further manipulations:
 
 ```bash
