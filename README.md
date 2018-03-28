@@ -331,11 +331,6 @@ and source the new kinetic to the workspace
 
 #### Set up udev rules for device access: 
 
-```bash
-sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
-```
-then replug the Kinect.
-
 **Tip**: Search for `90-kinect2.rules` by
 
 ```bash
@@ -349,6 +344,11 @@ and:
 find / -name rules.d
 ```
 which is `/etc/udev/rules.d` for this project.
+
+```bash
+sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
+```
+then replug the Kinect.
 
 Run `Protonect` for testing whether kinect is running properly or not
 
