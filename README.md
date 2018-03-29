@@ -14,6 +14,18 @@ and add the following line to the end of the file:
 ```
 alias python=python2
 ```
+comment out the anaconda PATH:
+
+```python
+# added by Anaconda2 4.4.0 installer
+# export PATH="/home/rh3014/anaconda2/bin:$PATH"
+
+# added by Anaconda3 installer
+# export PATH="/home/rh3014/anaconda3/bin:$PATH"
+# Virtual Environment Wrapper
+# source /usr/local/bin/virtualenvwrapper.sh
+```
+
 > By setting the route in `.bashrc`, force the program to look for the directory of default python.
 
 > If you intend to switch back to python3, simple change the line added to ```alias python=python3```.

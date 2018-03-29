@@ -1,33 +1,3 @@
-# Perception & Interface Design
-
-**VERY IMPORTANT (the following information may save your ass (well, tons of hours of installation))**: if you are using ubuntu, be careful with anaconda because conda Interference might prevent the required packages from being installed into the system python (if your don't define your `PATH` to search for packages clearly in the environment, and each time you try to install a package, the computer will automatically find the installed package which might not in the required directory e.g. Anaconda). Disable the conda python and force the program to use the system default python instead is a secured choice. Then always use `pip install` (or with a `sudo` in the front in some cases) to install all the packages required to run the project.
-
-
-
-#### Ckecking Network Configuration
-
-
-> **Note**: every time openning a new terminal, needs to export the above two lines or the environment settings won't be applied to the new terminal.
-
-
-> If you encounter the error of:
-> 
-> ```
-> Couldn't find an AF_INET address for [robin-pc-8](YOUR HOST COMPUTER)
-> ```
-> This indicates that the wired cable is not connected properly, unplug it and plug back and re-run the whole command.
-
-After all, execute:
-
-```
-$ rviz
-```
-to proceed further manipulations with ROS.
-
-</br>
-
-
-
 ### Graphic Card Configuration (for Vive & Kinect Camera)
 
 
@@ -43,6 +13,9 @@ In prior for `libfreenect2` to work, another package of `libturbojpeg` has to be
 $ apt-get install libturbojpeg
 ```
 Then, go to the website of `libfreenect2` and start installation by clone the repository into your local directory:
+
+
+https://github.com/OpenKinect/libfreenect2
 
 Then start building procedures:
 
