@@ -7,7 +7,7 @@ path = "haarcascade_eye.xml"
 
 eye_cascade = cv2.CascadeClassifier(path)
 
-eyes = eye_cascade.detectMultiScale(gray, scaleFactor=1.02, minNeighbors=20, minSize=(10,10))
+eyes = eye_cascade.detectMultiScale(gray, scaleFactor=1.02, minNeighbors=20, minSize=(10, 10))
 print(len(eyes))
 
 for (x, y, w, h) in eyes:

@@ -1,4 +1,4 @@
-# Goal: for all objects in the image, segment them out, draw them on a blank image and print the perimeter adn area
+# Goal: for all objects in the image, segment them out, draw them on a blank image and print the perimeter and area
 
 import numpy as np
 import cv2
@@ -20,7 +20,8 @@ print(len(contours))
 
 filtered = []
 for c in contours:
-    if cv2.contourArea(c) < 1000:continue
+    if cv2.contourArea(c) < 1000:
+        continue
     filtered.append(c)
 
 print(len(filtered))
