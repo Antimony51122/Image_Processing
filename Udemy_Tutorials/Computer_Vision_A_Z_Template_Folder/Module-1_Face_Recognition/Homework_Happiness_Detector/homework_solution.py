@@ -1,5 +1,3 @@
-# Homework Solution
-
 # Importing the libraries
 import cv2
 
