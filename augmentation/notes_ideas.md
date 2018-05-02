@@ -3,20 +3,20 @@
 ## Chromatic Aberration
 
 ### Principle
-     
+
 How color(wavelength affect the chromatic aberration): https://photo.stackexchange.com/questions/77810/what-determines-whether-chromatic-aberration-will-be-purple-green-or-red-cyan
 
 ### Generation
 
-**Prototype**
+#### Prototype
 
-**Algorithms**
+#### Algorithms
   
 ### Compensation, Prevention & Preprocessing:
 
-**Prototype**
+#### Prototype
 
-**Algorithms**
+#### Algorithms
 
 <br/>
 
@@ -28,19 +28,18 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
 
 
 
-
-## how to de-pixelate images in Photoshop
+## How to de-pixelate images in Photoshop
 
 > Bicubic Interpolation - Computerphile: <https://www.youtube.com/watch?v=poY_nGzEEWM>
 
 1. --> Image Size (Alt + Ctrl + I) --> Resolution: change the resolution to 300 pixels per inch or higher if you want, then make sure **Bicubic Automatic** option is selected
 2. --> Filter --> Noise --> Reduce Noise --> play around with the settings:
     
-    - Strength: 10
+	- Strength: 10
     - Preserve Details: 0
     - Reduce Colour Noise: 86%
     - Sharpen Details: 52%
-    - tick Remove JPEG Artifact
+    - tick Remove **JPEG Artifact**
 
 
 
@@ -48,7 +47,7 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
 <br/>
 
 - Angle
-  - Lens correction & Perspective Warp: <One-on-One: Advanced: Ch26>
+	- Lens correction & Perspective Warp: <One-on-One: Advanced: Ch26>
 
 #### 1. Lens Correction
 
@@ -60,38 +59,38 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
         > Vignette is darkening around the corners of the image essentially caused by lens element
         > to get rid of it, that's brighten up the colour
 
+
+
 #### 2. Distortion, Aberration and Vignette
     
 1. choose `Custom` setting tag of `Lens Correction`
 2. go to upper-left corner of the window, start with the `Remove Distortion Tool`:
-    - draging outward: add barrel distortion
-    - draging inward: add pincushioning distortion
+    - dragging outward: add barrel distortion
+    - dragging inward: add pincushioning distortion
 3. play around with the settings in `Chromatic Aberration` and `Vignette`
     
-#### 3. 
+#### 3. Adjusting Angle and Perspective  
 
-- Adjusting Angle and Perspective  
+1. navigate to the `Transform` tag, play around with the `Angle`
+2. choose `Move Grid Tool`, change in the bottom, the grid `Color` to make the grid contrastively visible and `Size` to make it align better with the image features.  
+3. go back to the `Transform` tag, play around with the `Horizontal Perspective` and `Vertical Perspective`.
     
-    1. navigate to the `Transform` tag, play around with the `Angle`
-    2. choose `Move Grid Tool`, change in the bottom, the grid `Color` to make the grid contrastively visible and `Size` to make it align better with the image features.  
-    3. go back to the `Transform` tag, play around with the `Horizontal Perspective` and `Vertical Perspective`.
-    
-- 1. Using the Perspective Warp Command
+#### 4.1 Using the Perspective Warp Command
 
-    1. set 4 `Guidelines`
-    2. go to `Edit`, navigate to `Perspective Warp`
+1. set 4 `Guidelines`
+2. go to `Edit`, navigate to `Perspective Warp`
     
-        - establish a base setting for our boundaries that the vertices should align to the four points you want to use as reference points
-        - click `Enter` entering the edit mode in step 2 to drag and adjust the image
+	- establish a base setting for our boundaries that the vertices should align to the four points you want to use as reference points
+	- click `Enter` entering the edit mode in step 2 to drag and adjust the image
         
-- 2. Fine-Tuning the Perspective Adjustment
+#### 4.2 Fine-Tuning the Perspective Adjustment
 
-    1. gradually improve the image by playing around the 4 vertices
-    2. after the four vertices of the perspective warping box aligned to the 4 boundary vertices, check if there is still geometric distortions by checking whether there are slightly curved lines. Go back to step 1 and adjust the `Geometric Distortion` value for further compensation.
+1. gradually improve the image by playing around the 4 vertices
+2. after the four vertices of the perspective warping box aligned to the 4 boundary vertices, check if there is still geometric distortions by checking whether there are slightly curved lines. Go back to step 1 and adjust the `Geometric Distortion` value for further compensation.
     
-    > Beware that the last step has no preview effect influenced by the later action of perspective warp
+> Beware that the last step has no preview effect influenced by the later action of perspective warp
     
-#### 4. Evening out Colour and Lighting
+#### 5. Evening out Colour and Lighting
 
 > This section has nothing to do with the `Lens Correction` filter but everything to do with quality image editing.
 
@@ -110,12 +109,15 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
 
 
 
-- Luminance, Brightness & Contrast
-  > colour is a function of luminance
-  - auto contrast:
-    - takes the darkest pixel and make it black
-    - takes the brightest pixel and make it white
-    - stretches out all the other luminance levels in between
+## Luminance, Brightness & Contrast
+	
+> colour is a function of luminance
+
+- auto contrast:
+
+	- takes the darkest pixel and make it black
+	- takes the brightest pixel and make it white
+	- stretches out all the other luminance levels in between
 
     - Implementation:
       - https://blog.csdn.net/matrix_space/article/details/22951103

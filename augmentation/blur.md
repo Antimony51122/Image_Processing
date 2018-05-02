@@ -122,39 +122,52 @@ Emboss Algorithm: <https://www.packtpub.com/mapt/book/application_development/97
 
 - "**Blending sharpening effect**":
 
-  > For exaggerated Unsharp Mask effects, we get some sort like purple surrounded by yellow, which is due that we are sharpening all three channels
-  > change the blend mode from normal to luminosity and those edges will disappear, because we are no longer sharpening the colour but just sharpening the details
-  > ALWAYS using **`amount`** of max 500, blending mode of luminosity and change the opacity of the mask to adjust
+	> - For exaggerated Unsharp Mask effects, we get some sort like purple surrounded by yellow, which is due that we are sharpening all three channels
+	> - change the blend mode from normal to luminosity and those edges will disappear, because we are no longer sharpening the colour but just sharpening the details
+	> - ALWAYS using **`amount`** of max 500, blending mode of luminosity and change the opacity of the mask to adjust
 
 - "**Smart Sharpen**":
-  > by comparing with the above sharpening effect, less halos along the edge and less black areas
-  > Use Gaussian Blur to produce the unsharpening effect
+
+	> - by comparing with the above sharpening effect, less halos along the edge and less black areas
+	> - Use Gaussian Blur to produce the unsharpening effect
 
 - "**Lens Blur and Reduce Noise**":
-  - Smart Sharpen, Amount 500%; Radius 4.5px; 50% Reduce Noise
-  > Gaussian Blur is designed when you down sample an image or working with a scanned photograph, but when working with a digital photograph, Lens Blur is going to produce better, crisper effects.
+  
+	- Smart Sharpen, Amount 500%; Radius 4.5px; 50% Reduce Noise
 
-- "***Preventing Shadow/highlight clipping***"(by far best outcome):
-  - Amount: 500%
-  - Radius: 6.0px
-  - Reduce Noise: 50%
-  **Shadows**:
-    - Fade Amount: 10%
+	> Gaussian Blur is designed when you down sample an image or working with a scanned photograph, but when working with a digital photograph, Lens Blur is going to produce better, crisper effects.
+
+"**Preventing Shadow/highlight clipping**"(by far best outcome):
+
+- Amount: 500%
+- Radius: 6.0px
+- Reduce Noise: 50%
+
+	**Shadows**:
+
+	- Fade Amount: 10%
+	- Tonal Width: 50%
+	- Radius: 50px
+
+	**Highlights**:
+    
+	- Fade Amount: 10%
     - Tonal Width: 50%
     - Radius: 50px
-  ***Highlights***:
-    - Fade Amount: 10%
-    - Tonal Width: 50%
-    - Radius: 50px
- - "***Sharpening with the High Pass Filter***":
-  > it naturally avoids clipping, which is useful for sharpening portrait shots
-  > Both High Pass and Unsharp Mask reply on Gaussian Blur to do the sharpening
-  > give you a more pronounced, colourful effect
-  - Implementation:
-    - https://blog.csdn.net/matrix_space/article/details/72303076 (high-pass)
+    
+	"**Sharpening with the High Pass Filter**":
+  
+	> it naturally avoids clipping, which is useful for sharpening portrait shots
+  	
+	> Both High Pass and Unsharp Mask reply on Gaussian Blur to do the sharpening
+  	
+	> give you a more pronounced, colourful effect
+  
+	- Implementation:
+    	- https://blog.csdn.net/matrix_space/article/details/72303076 (high-pass)
 
-- Prototype:
-- Algorithms:
+	- Prototype:
+	- Algorithms:
 
 
 
