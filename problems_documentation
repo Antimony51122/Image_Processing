@@ -1,29 +1,4 @@
 
-
-Set up udev rules for device access: 
-
-sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
-
-then replug the Kinect.
-
-
-
-90-kinect2.rules
-
-/home/rh3014/libfreenect2/platform/linux/udev/90-kinect2.rules
-
-
-rules.d
-
-/etc/udev/rules.d
-
-
-Protonect
-
-/home/rh3014/libfreenect2/build/bin/Protonect
-
-
-
 https://gist.github.com/rethink-imcmahon/77a1a4d5506258f3dc1f
 
 chmod +x <filename>
@@ -48,35 +23,6 @@ http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImage
 
 
 
-```
-chmod +x ROS_imgProcessing2.py
-```
-
-using echo to check whether there is an output from the host master (baxter `export ROS_MASTER_URI=http://192.168.0.110:11311/`) 
-
-```
-rostopic echo /camera/depth/image_raw
-```
-using echo to check whether the output from the remote computer is working
-in this case:
-
-```
-rostopic echo image_topic_2
-```
-
-**Note**: Common Problems:
-```
-Unable to register with master node [http://localhost:11311/]: master may not be running yet. Will keep trying.
-```
-to solve this, simply need to run 
-```
-roscore
-```
-
-```
-cd /opt/ros/kinetic
-source setup.bash
-```
 
 **Note**: can't subscribe to the ir and depth at the same instance, due that the depth detection comes from the ir
 

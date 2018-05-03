@@ -16,7 +16,7 @@ while (1):
     res = cv2.bitwise_and(frame, frame, mask=mask)
 
     cv2.imshow('Original', frame)
-    edges = cv2.Canny(frame, 100, 200)
+    edges = cv2.Canny(frame, 40, 200)
     cv2.imshow('Edges', edges)
 
     k = cv2.waitKey(5) & 0xFF

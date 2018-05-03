@@ -46,9 +46,6 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
 
 <br/>
 
-- Angle
-	- Lens correction & Perspective Warp: <One-on-One: Advanced: Ch26>
-
 #### 1. Lens Correction
 
 1. rename and convert to smart object 
@@ -59,7 +56,7 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
         > Vignette is darkening around the corners of the image essentially caused by lens element
         > to get rid of it, that's brighten up the colour
 
-
+s
 
 #### 2. Distortion, Aberration and Vignette
     
@@ -68,7 +65,7 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
     - dragging outward: add barrel distortion
     - dragging inward: add pincushioning distortion
 3. play around with the settings in `Chromatic Aberration` and `Vignette`
-    
+
 #### 3. Adjusting Angle and Perspective  
 
 1. navigate to the `Transform` tag, play around with the `Angle`
@@ -105,7 +102,9 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
 ---
 <br/>
 
-- Frosted glass effect: water on the surface of the glass: https://blog.csdn.net/matrix_space/article/details/78345426
+### Frosted glass effect: water on the surface of the glass: 
+
+- https://blog.csdn.net/matrix_space/article/details/78345426
 
 
 
@@ -113,18 +112,19 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
 	
 > colour is a function of luminance
 
-- auto contrast:
+#### Auto Contrast:
 
-	- takes the darkest pixel and make it black
-	- takes the brightest pixel and make it white
-	- stretches out all the other luminance levels in between
+1. takes the darkest pixel and make it black
+2. takes the brightest pixel and make it white
+3. stretches out all the other luminance levels in between
 
-    - Implementation:
-      - https://blog.csdn.net/matrix_space/article/details/22951103
+**Implementation:**
 
-  - OpenCV图像增强算法实现（直方图均衡化、拉普拉斯、Log、Gamma） https://blog.csdn.net/dcrmg/article/details/53677739
+- https://blog.csdn.net/matrix_space/article/details/22951103
 
-  - https://blog.csdn.net/matrix_space/article/details/37913937 --> down the page bottom, find the effect of Soft Lighten & Strong Lighten
+	- OpenCV图像增强算法实现（直方图均衡化、拉普拉斯、Log、Gamma） https://blog.csdn.net/dcrmg/article/details/53677739
+
+	- https://blog.csdn.net/matrix_space/article/details/37913937 --> down the page bottom, find the effect of Soft Lighten & Strong Lighten
 
 - Contrast: https://blog.csdn.net/matrix_space/article/details/72286491
 

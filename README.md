@@ -14,19 +14,25 @@ and add the following line to the end of the file:
 ```
 alias python=python2
 ```
+comment out the anaconda PATH:
+
+```python
+# added by Anaconda2 4.4.0 installer
+# export PATH="/home/rh3014/anaconda2/bin:$PATH"
+
+# added by Anaconda3 installer
+# export PATH="/home/rh3014/anaconda3/bin:$PATH"
+# Virtual Environment Wrapper
+# source /usr/local/bin/virtualenvwrapper.sh
+```
+
 > By setting the route in `.bashrc`, force the program to look for the directory of default python.
 
 > If you intend to switch back to python3, simple change the line added to ```alias python=python3```.
 
 Then, open terminal, type `python` and execute, something analogous to the following lines will show up:
 
-<span style="color:red"> 
-***need to check on Ubuntu***
-</span>
-
-</br>
-
-
+<img src="images_readme/default_python2.png">
 
 ### Network Configuration
 
@@ -39,6 +45,8 @@ Firstly, `ctrl` + `alt` + `t` to open the terminal and register as root:
 ```bash
 $ sudo bash
 ```
+> `ctrl` + `d` to exit root mode.
+
 Then navigate to the network directory for further manipulations:
 
 ```bash
@@ -52,9 +60,7 @@ $ gedit interfaces
 ```
 Within the `interfaces` file, you should be seeing contents like the following:
 
-<span style="color:red"> 
-***need to check on Ubuntu***
-</span>
+<img src="images_readme/network_interfaces.png">
 
 Then simply comment out everything below the line of: `source /etc/network/interfaces.d/*`
 
@@ -65,9 +71,7 @@ $ apt-get install network-manager-pptp network-manager-pptp-gnome
 ```
 After that, plug in the wired connection and disable the WiFi connection left only wired connection avaible by click 
 
-<span style="color:red"> 
-***need to check on Ubuntu***
-</span>
+<img src="images_readme/disable_wifi.png">
 
 Finally, restart the wired connection by:
 
@@ -128,17 +132,11 @@ For the purpose of setting up a proper environment for the Vive Headset and Kine
 
 #### Cuda Installation
 
-For this particular project, the Vive headset and Kinect are compatible and running in maximum efficiency with combination of nvidia-384 driver and `cuda-8.0`, thus need to make sure installing cuda as first priority by downloading the package from 
-
-<span style="color:red"> 
-***check the website***
-</span>
+For this particular project, the Vive headset and Kinect are compatible and running in maximum efficiency with combination of nvidia-384 driver and `cuda-8.0`, thus need to make sure installing cuda as first priority by downloading the package from https://developer.nvidia.com/cuda-80-ga2-download-archive
 
 `$ ls -tr` to set the list as time order to find the latest download in the directory.
 
-<span style="color:red"> 
-***check the usage of `chmod +x`***
-</span>
+Execute the following command to make the file executable:
 
 ```bash
 $ chmod +x cuda_8.0.61_375.26_linux.run
@@ -247,14 +245,11 @@ Firstly, check the Nvdia version on the perception host computer by:
 $ nvidia-smi
 ```
 
-<span style="color:red"> 
-***check the usage of the following line***
-</span>
-
 ```bash
+$ apt-get update
 $ apt-get install dnsmasq
 ```
-
+> Dnsmasq is a lightweight, easy to configure, DNS forwarder and DHCP server. It is designed to provide DNS and optionally, DHCP, to a small network. It can serve the names of local machines which are not in the global DNS. The DHCP server integrates with the DNS server and allows machines with DHCP-allocated addresses to appear in the DNS with names configured either in each host or in a central configuration file. Dnsmasq supports static and dynamic DHCP leases and BOOTP/TFTP for network booting of diskless machines
 
 
 #### (Optional) might not work on all computers
@@ -312,4 +307,85 @@ to check the stream reponse from the camera.
 
 
 
+```bash
+chmod +x ROS_imgProcessing2.py
+```
 
+using echo to check whether there is an output from the host master (baxter `export ROS_MASTER_URI=http://192.168.0.110:11311/`)
+
+```bash
+rostopic echo /camera/depth/image_raw
+```
+
+using echo to check whether the output from the remote computer is working
+in this case:
+
+```bash
+rostopic echo image_topic_2
+```
+
+**Note**: Common Problems:
+
+```
+Unable to register with master node [http://localhost:11311/]: master may not be running yet. Will keep trying.
+```
+to solve this, simply need to run 
+
+```bash
+roscore
+```
+
+```
+cd /opt/ros/kinetic
+source setup.bash
+```
+and source the new kinetic to the workspace
+
+#### Set up udev rules for device access: 
+
+**Tip**: Search for `90-kinect2.rules` by
+
+```bash
+find / -name 90-kinect2.rules
+```
+which is `/home/rh3014/libfreenect2/platform/linux/udev/90-kinect2.rules` for this project.
+
+and:
+
+```bash
+find / -name rules.d
+```
+which is `/etc/udev/rules.d` for this project.
+
+```bash
+sudo cp /home/rh3014/libfreenect2/platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
+```
+then replug the Kinect.
+
+Run `Protonect` for testing whether kinect is running properly or not
+
+```bash
+find / -name Protonect
+```
+--> `/home/rh3014/libfreenect2/build/bin/Protonect`
+
+if no device connected/:
+
+```
+Version: 0.2.0
+Environment variables: LOGFILE=<protonect.log>
+Usage: /home/rh3014/libfreenect2/build/bin/Protonect [-gpu=<id>] [gl | cl | clkde | cuda | cudakde | cpu] [<device serial>]
+        [-noviewer] [-norgb | -nodepth] [-help] [-version]
+        [-frames <number of frames to process>]
+To pause and unpause: pkill -USR1 Protonect
+[Info] [Freenect2Impl] enumerating devices...
+[Info] [Freenect2Impl] 9 usb devices connected
+[Info] [Freenect2Impl] found 0 devices
+no device connected!
+```
+
+### Depth Sensor Algorithm
+
+https://www.pyimagesearch.com/2015/01/19/find-distance-camera-objectmarker-using-python-opencv/
+
+https://docs.opencv.org/3.1.0/dd/d53/tutorial_py_depthmap.html
