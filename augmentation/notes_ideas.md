@@ -1,25 +1,5 @@
 # Data Augmentation
 
-## Chromatic Aberration
-
-### Principle
-
-How color(wavelength affect the chromatic aberration): https://photo.stackexchange.com/questions/77810/what-determines-whether-chromatic-aberration-will-be-purple-green-or-red-cyan
-
-### Generation
-
-#### Prototype
-
-#### Algorithms
-  
-### Compensation, Prevention & Preprocessing:
-
-#### Prototype
-
-#### Algorithms
-
-<br/>
-
 
 
 Video noise reduction in Photoshop CC 2017: <https://www.youtube.com/watch?v=zm0IwSXoXwE>
@@ -46,6 +26,8 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
 
 <br/>
 
+## Affine Transformation
+
 #### 1. Lens Correction
 
 1. rename and convert to smart object 
@@ -56,7 +38,7 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
         > Vignette is darkening around the corners of the image essentially caused by lens element
         > to get rid of it, that's brighten up the colour
 
-s
+
 
 #### 2. Distortion, Aberration and Vignette
     
@@ -143,6 +125,28 @@ Other websites:
 <https://github.com/makelove/Python_Master_Courses>
 
 <https://weibo.com/u/2368645233?refer_flag=1001030103_&is_all=1#_rnd1524814005782>
+
+## Chromatic Aberration: 色差
+
+### Principle
+
+How color(wavelength affect the chromatic aberration): https://photo.stackexchange.com/questions/77810/what-determines-whether-chromatic-aberration-will-be-purple-green-or-red-cyan
+
+### Generation
+
+#### Prototype
+
+#### Algorithms
+  
+### Compensation, Prevention & Preprocessing:
+
+#### Prototype
+
+Idea: blend mode: --> Luminosity
+
+#### Algorithms
+
+<br/>
 
 
 
