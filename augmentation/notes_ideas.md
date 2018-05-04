@@ -70,14 +70,36 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
     
 	- establish a base setting for our boundaries that the vertices should align to the four points you want to use as reference points
 	- click `Enter` entering the edit mode in step 2 to drag and adjust the image
-        
+
+<table>
+  	<tr>
+    	<th>Original Image</th>
+    	<th>Image after Perspective Wrap</th>
+  	</tr>
+  	<tr>
+    	<td><img src="images/lens_correction/0_original.png" width=500px></td>
+    	<td><img src="images/lens_correction/1_perspective_wrap.png" width=500px></td>
+  	</tr>
+</table>
+       
 #### 4.2 Fine-Tuning the Perspective Adjustment
 
 1. gradually improve the image by playing around the 4 vertices
 2. after the four vertices of the perspective warping box aligned to the 4 boundary vertices, check if there is still geometric distortions by checking whether there are slightly curved lines. Go back to step 1 and adjust the `Geometric Distortion` value for further compensation.
     
 > Beware that the last step has no preview effect influenced by the later action of perspective warp
-    
+
+<table>
+  	<tr>
+    	<th>Image after Perspective Wrap</th>
+    	<th>Image after Lens Correction (solve fish-eye)</th>
+  	</tr>
+  	<tr>
+    	<td><img src="images/lens_correction/1_perspective_wrap.png" width=500px></td>
+    	<td><img src="images/lens_correction/2_lens_correction.png" width=500px></td>
+  	</tr>
+</table>
+
 #### 5. Evening out Colour and Lighting
 
 > This section has nothing to do with the `Lens Correction` filter but everything to do with quality image editing.
@@ -88,7 +110,16 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
     - set the `Opacity` to `50%`
 3. choose the layer mask, choose `Brush` and draw on the image's dark spots and lighten them.
 
-
+<table>
+  	<tr>
+    	<th>Image after Lens Correction</th>
+    	<th>Image after Lens Colour/ Brightness/ Contrast Tuning</th>
+  	</tr>
+  	<tr>
+    	<td><img src="images/lens_correction/2_lens_correction.png" width=500px></td>
+    	<td><img src="images/lens_correction/3_effects.png" width=500px></td>
+  	</tr>
+</table>
 
 ---
 <br/>
