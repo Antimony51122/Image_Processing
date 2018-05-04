@@ -21,7 +21,16 @@ parent web: <https://plus.google.com/+Hdesigntutorials>
     - Sharpen Details: 52%
     - tick Remove **JPEG Artifact**
 
-
+<table>
+  	<tr>
+    	<th>Image with very Low Resolution</th>
+    	<th>Image after De-pixelation</th>
+  	</tr>
+  	<tr>
+    	<td><img src="images/de-pixelate/Trump_resLowLow.png" width=500px></td>
+    	<td><img src="images/de-pixelate/Trump_resHigh_sharpen.png" width=500px></td>
+  	</tr>
+</table>
 
 
 <br/>
