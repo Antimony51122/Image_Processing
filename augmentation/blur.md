@@ -12,7 +12,7 @@
 
 ### Compensation:
 
-#### Prototype: Sharpening with Emboss
+#### Prototype: Sharpening with Embossment
 
 **the original image**
 
