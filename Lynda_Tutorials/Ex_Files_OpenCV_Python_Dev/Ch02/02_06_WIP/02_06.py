@@ -1,5 +1,5 @@
 # The Gaussian Blur filter smooths an image by averaging pixel values with ist neighbours.
-# It's ca;;ed a Gaussian Blur because the averaging has a Gaussian falloff effect
+# It's called a Gaussian Blur because the averaging has a Gaussian falloff effect
 # Pixels that are closer to the target pixel have a higher impact with the average than pixels that are faraway
 
 import numpy as np
